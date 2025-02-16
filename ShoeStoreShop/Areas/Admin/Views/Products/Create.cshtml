@@ -1,0 +1,108 @@
+﻿@model Shoe
+
+@{
+    ViewData["Title"] = "Thêm sản phẩm";
+}
+
+<div class="container tm-mt-big tm-mb-big">
+    <div class="row">
+        <div class="col-xl-9 col-lg-10 col-md-12 col-sm-12 mx-auto">
+            <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="tm-block-title d-inline-block">Thêm sản phẩm</h2>
+                    </div>
+                </div>
+                <form method="post" asp-action="Create" enctype="multipart/form-data" class="tm-edit-product-form">
+                <div class="row tm-edit-product-row">
+                    <div class="col-xl-6 col-lg-6 col-md-12">
+                        
+                            <div class="form-group mb-3">
+                                <label for="Name">Tên sản phẩm</label>
+                                <input id="Name" asp-for="Name" type="text" class="form-control validate" required />
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="Description">Mô tả</label>
+                                <textarea id="Description" asp-for="Description" class="form-control validate" rows="3" required></textarea>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="CategoryId">Danh mục</label>
+                                <select id="CategoryId" class="custom-select tm-select-accounts" asp-for="Category_Id" asp-items="ViewBag.Category">
+                                    <option selected>Chọn danh mục</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="BrandId">Thương hiệu</label>
+                                <select id="BrandId" class="custom-select tm-select-accounts" asp-for="Brand_Id" asp-items="ViewBag.Brands">
+                                    <option selected>Chọn thương hiệu</option>
+                                </select>
+                            </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
+                        <div class="row">
+                            <div class="form-group mb-3 col-xs-12 col-sm-6">
+                                <label for="Size">Size</label>
+                                <input id="Size" type="text" class="form-control validate" />
+                            </div>
+
+                            <div class="form-group mb-3 col-xs-12 col-sm-6">
+                                <label for="ColorId">Màu</label>
+                                <select id="ColorId" class="custom-select tm-select-accounts" asp-for="ColorId" asp-items="ViewBag.Colors">
+                                    <option selected>Chọn màu</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group mb-3 col-xs-12 col-sm-6">
+                                <label for="Price">Giá</label>
+                                <input id="Price" asp-for="Price" type="number" class="form-control validate" />
+                            </div>
+                            <div class="form-group mb-3 col-xs-12 col-sm-6">
+                                <label for="Gender">Giới tính</label>
+                                <select id="Gender" class="custom-select tm-select-accounts" asp-for="Gender">
+                                    <option selected>Chọn</option>
+                                    <option value="Men">Nam</option>
+                                    <option value="Women">Nữ</option>
+                                    <option value="Unisex">Unisex</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Hình Ảnh</label>
+                            <input type="file" id="imageUpload" name="images" multiple class="form-control py-2 my-2" accept="image/*" />
+                            <div id="imagePreview" class="my-2 d-flex flex-wrap"></div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary btn-block text-uppercase">Thêm sản phẩm</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("imageUpload").addEventListener("change", function(event) {
+        let preview = document.getElementById("imagePreview");
+        preview.innerHTML = ""; // Xóa ảnh cũ
+        let files = event.target.files;
+
+        if (files.length > 0) {
+            for (let i = 0; i < files.length; i++) {
+                let file = files[i];
+                let reader = new FileReader();
+                reader.onload = function(e) {
+                    let img = document.createElement("img");
+                    img.src = e.target.result;
+                    img.className = "img-thumbnail m-1";
+                    img.style.width = "100px";
+                    img.style.height = "100px";
+                    preview.appendChild(img);
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+    });
+</script>

@@ -1,0 +1,72 @@
+﻿@model List<ShoeStore.Models.Shoe>
+
+@{
+	ViewData["Title"] = "Danh sách sản phẩm";
+}
+
+<div class="container mt-5">
+    <div class="row tm-content-row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 tm-block-col">
+            <div class="tm-bg-primary-dark tm-block tm-block-products">
+                <div class="tm-product-table-container">
+                    <table class="table table-hover tm-table-small tm-product-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">&nbsp;</th>
+                                <th scope="col">Tên sản phẩm</th>
+                                <th scope="col">Giá</th>
+                                <th scope="col">Màu</th>
+                                <th scope="col">Hãng</th>
+                                <th scope="col">&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var product in Model)
+                            {
+                                <tr>
+                                    <th scope="row"><input type="checkbox" /></th>
+									<td class="tm-product-name">@product.Name</td>
+									<td>@product.Price</td>
+									<td>@product.Color.Name</td>
+                                    <td>@product.Brand.Name</td>
+                                    <td>
+										<a asp-controller="Products" asp-action="Edit" asp-route-id="@product.Id" class="tm-product-edit-link">
+                                        
+                                            <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                }
+                        </tbody>
+                    </table>
+                </div>
+                <!-- table container -->
+				<a asp-controller="Products" asp-action="Create"
+                   class="btn btn-primary btn-block text-uppercase mb-3">Thêm sản phẩm mới</a>
+                <button class="btn btn-primary btn-block text-uppercase">
+					Xóa sản phẩm đã chọn
+                </button>
+            </div>
+        </div>
+       
+    </div>
+</div>
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["SuccessMessage"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}

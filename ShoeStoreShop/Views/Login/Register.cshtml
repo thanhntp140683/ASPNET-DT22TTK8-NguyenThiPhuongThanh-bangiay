@@ -1,0 +1,58 @@
+﻿<!-- Start Banner Area -->
+<section class="banner-area organic-breadcrumb">
+    <div class="container">
+        <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+            <div class="col-first">
+                <h1>Đăng ký</h1>
+                <nav class="d-flex align-items-center">
+                    <a href="index.html">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+                    <a href="register.html">Đăng ký</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Banner Area -->
+<!--================Register Box Area =================-->
+<section class="login_box_area section_gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="login_box_img">
+                    <img class="img-fluid" src="img/register.jpg" alt="">
+                    <div class="hover">
+                        <h4>Tham gia ngay để tận hưởng ưu đãi!</h4>
+                        <p>Hãy tạo tài khoản và nhận nhiều ưu đãi hấp dẫn từ Shoe Store.</p>
+                        <a class="primary-btn" href="login.html">Đã có tài khoản? Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="login_form_inner">
+                    <h3>Tạo tài khoản mới</h3>
+                    <form class="row login_form" asp-action="Register" method="post" id="registerForm">
+                        <div class="col-md-12 form-group">
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Tài khoản" required>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Tên" required>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Mật khẩu" required>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Nhập lại mật khẩu" required>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <button type="submit" value="submit" class="primary-btn">Đăng ký</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================End Register Box Area =================-->

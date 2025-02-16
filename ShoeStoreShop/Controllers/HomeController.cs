@@ -1,32 +1,31 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using ShoeStoreShop.Models;
+using Microsoft.EntityFrameworkCore;
+using ShoeStore.Data;
+using ShoeStore.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
-namespace ShoeStoreShop.Controllers
+namespace ShoeStore.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ApplicationDbContext _context;
+        public HomeController(ApplicationDbContext context)
         {
-            _logger = logger;
+            _context = context;
         }
-
         public IActionResult Index()
         {
-            return View();
+            var categories = _context.Categories.ToList();
+            var products = _context.Shoes.Include(p => p.Category).ToList();
+            var brands = _context.Brands.ToList();
+            ViewBag.Categories = categories;
+            ViewBag.Products = products;
+            ViewBag.Brands = brands;
+            return View(products);
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

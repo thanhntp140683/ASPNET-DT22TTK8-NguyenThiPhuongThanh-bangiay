@@ -1,0 +1,242 @@
+﻿@{
+    ViewData["Title"] = "Thuộc tính sản phẩm";
+    var categories = ViewData["Categories"] as List<Category>;
+    var brands = ViewData["Brands"] as List<Brand>;
+    var colors = ViewData["Colors"] as List<Color>;
+}
+
+<div class="container mt-5">
+    <div class="row tm-content-row">
+        <button class="btn btn-primary btn-block text-uppercase mb-3" data-toggle="modal" data-target="#Create">Thêm </button>
+        <div class="modal fade" id="Create" tabindex="-1" aria-labelledby="Create" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content tm-bg-primary-dark">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Thêm</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form asp-action="CreateCustom" method="post">
+                        <label for="Create">Chọn kiểu:</label>
+                        <select class="custom-select tm-select-accounts" name="select">
+							<option selected>Chọn</option>
+                            <option value="category">Danh mục</option>
+							<option value="brand">Thương hiệu</option>
+							<option value="color">Màu sắc</option>
+                        </select>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="categoryName">Tên</label>
+                                <input type="text" name="name" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                            <button type="submit" class="btn btn-primary">Lưu</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Danh mục -->
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-block-col">
+            <div class="tm-bg-primary-dark tm-block tm-block-product-categories">
+                <h2 class="tm-block-title">Danh mục</h2>
+                <div class="tm-product-table-container">
+                    <table class="table tm-table-small tm-product-table">
+                        <tbody>
+                            @if (categories != null)
+                            {
+                                @foreach (var category in categories)
+                                {
+                                    <tr>
+                                        <td class="tm-product-name">@category.Name</td>
+                                        <td class="text-center">
+                                            <!-- Nút sửa -->
+                                            <a href="#" class="tm-product-edit-link mx-2" data-toggle="modal" data-target="#editCategoryModal-category-@category.Id">
+                                                <i class="far fa-edit tm-product-delete-icon"></i>
+                                            </a>
+
+                                            <!-- Nút xóa -->
+                                            <a href="#" class="tm-product-delete-link">
+                                                <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Thương hiệu -->
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-block-col">
+            <div class="tm-bg-primary-dark tm-block tm-block-product-categories">
+                <h2 class="tm-block-title">Thương hiệu</h2>
+                <div class="tm-product-table-container">
+                    <table class="table tm-table-small tm-product-table">
+                        <tbody>
+                            @if (brands != null)
+                            {
+                                @foreach (var brand in brands)
+                                {
+                                    <tr>
+                                        <td class="tm-product-name">@brand.Name</td>
+                                        <td class="text-center">
+                                            <!-- Nút sửa -->
+                                            <a href="#" class="tm-product-edit-link mx-2" data-toggle="modal" data-target="#editBrandModal-@brand.Id">
+                                                <i class="far fa-edit tm-product-delete-icon"></i>
+                                            </a>
+
+                                            <!-- Nút xóa -->
+                                            <a href="#" class="tm-product-delete-link">
+                                                <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Màu sắc -->
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-block-col">
+            <div class="tm-bg-primary-dark tm-block tm-block-product-categories">
+                <h2 class="tm-block-title">Màu sắc</h2>
+                <div class="tm-product-table-container">
+                    <table class="table tm-table-small tm-product-table">
+                        <tbody>
+                            @if (colors != null)
+                            {
+                                @foreach (var color in colors)
+                                {
+                                    <tr>
+                                        <td class="tm-product-name">@color.Name</td>
+                                        <td class="text-center">
+                                            <!-- Nút sửa -->
+                                            <a href="#" class="tm-product-edit-link mx-2" data-toggle="modal" data-target="#editColorModal-@color.Id">
+                                                <i class="far fa-edit tm-product-delete-icon"></i>
+                                            </a>
+
+                                            <!-- Nút xóa -->
+                                            <a href="#" class="tm-product-delete-link">
+                                                <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@foreach (var category in categories)
+{
+    <div class="modal fade" id="editCategoryModal-category-@category.Id" tabindex="-1" aria-labelledby="editCategoryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sửa danh mục</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form asp-action="EditCategory" method="post">
+                    <div class="modal-body">
+                        <input type="hidden" name="Id" value="@category.Id" />
+                        <div class="form-group">
+                            <label for="categoryName">Tên danh mục</label>
+                            <input type="text" name="Name" class="form-control" value="@category.Name" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        <button type="submit" class="btn btn-primary">Lưu</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+@foreach (var brand in brands)
+{
+    <div class="modal fade" id="editBrandModal-@brand.Id" tabindex="-1" aria-labelledby="editBrandModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sửa thương hiệu</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form asp-action="EditBrand" method="post">
+                    <div class="modal-body">
+                        <input type="hidden" name="Id" value="@brand.Id" />
+                        <div class="form-group">
+                            <label for="brandName">Tên thương hiệu</label>
+                            <input type="text" name="Name" class="form-control" value="@brand.Name" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        <button type="submit" class="btn btn-primary">Lưu</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+@foreach (var color in colors)
+{
+    <div class="modal fade" id="editColorModal-@color.Id" tabindex="-1" aria-labelledby="editColorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sửa màu sắc</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form asp-action="EditColor" method="post">
+                    <div class="modal-body">
+                        <input type="hidden" name="Id" value="@color.Id" />
+                        <div class="form-group">
+                            <label for="colorName">Tên màu</label>
+                            <input type="text" name="Name" class="form-control" value="@color.Name" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        <button type="submit" class="btn btn-primary">Lưu</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["SuccessMessage"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
