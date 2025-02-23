@@ -1,25 +1,25 @@
 # ASPNET-DT22TTK8-NguyenThiPhuongThanh-bangiay
 Xây dựng website shop bán giày bằng ASP.NET
 
-# 📦 **Hướng Dẫn Cài Đặt Visual Studio Code**
+# 📦 **Hướng Dẫn Cài Đặt Visual Studio**
 
 ## 📜 **Giới Thiệu**
 
-Chào mừng bạn đến với **Hướng Dẫn Cài Đặt Visual Studio Code**! Hướng dẫn này sẽ giúp bạn thiết lập **Visual Studio Code** để đảm bảo bạn có mọi thứ cần thiết cho các dự án lập trình và hướng dẫn của mình! 💻💡
+Chào mừng bạn đến với **Hướng Dẫn Cài Đặt Visual Studio**! Hướng dẫn này sẽ giúp bạn thiết lập **Visual Studio** để đảm bảo bạn có mọi thứ cần thiết cho các dự án lập trình và hướng dẫn của mình! 💻💡
 
 ---
 
-### 🔍 Bước 1: **Tải Xuống Visual Studio Code**
+### 🔍 Bước 1: **Tải Xuống Visual Studio**
 
 1. **Tải xuống trình cài đặt**:  
 
-   Nhấp vào liên kết dưới đây để tải xuống trình cài đặt **Visual Studio Code**:  
+   Nhấp vào liên kết dưới đây để tải xuống trình cài đặt **Visual Studio**:  
 
-   - 📥 [**Tải Xuống Visual Studio Code**](https://code.visualstudio.com/)
+   - 📥 [**Link download Visual Studio**](https://visualstudio.microsoft.com/downloads/?cid=learn-onpage-download-install-visual-studio-page-cta/)
 
-2. **Chọn hệ điều hành của bạn**:  
+2. **Chọn phiên bản Visual Studio**:  
 
-   🏷️ Sau khi nhấp vào liên kết, hãy chọn hệ điều hành của bạn: **Windows**, **macOS**, hoặc **Linux**.  
+   🏷️ Ở đây bạn chọn phiên bản `Community` > chọn `Free Download`  để tải IDE.
 
 3. **Mở trình cài đặt**:  
 
@@ -27,7 +27,7 @@ Chào mừng bạn đến với **Hướng Dẫn Cài Đặt Visual Studio Code*
 
 ---
 
-### 🔧 Bước 2: **Cài Đặt Visual Studio Code**
+### 🔧 Bước 2: **Cài Đặt Visual Studio**
 
 1. **Chạy trình cài đặt**:  
 
@@ -35,11 +35,15 @@ Chào mừng bạn đến với **Hướng Dẫn Cài Đặt Visual Studio Code*
 
 2. **Làm theo hướng dẫn cài đặt**:  
 
-   ✔️ Làm theo các hướng dẫn trong trình cài đặt để hoàn tất cài đặt. Hãy đảm bảo chọn tùy chọn thêm **VS Code** vào **PATH** nếu được nhắc.
+   - Ở mục `Workloads` chọn phiên bản lập trình web `ASP.NET and web development` 
+   - Tùy chỉnh các phiên bản framework ở mục `Individual commponent`
+   - Chọn ngôn ngữ ở mục `Language packs`
+   - Đổi đường dẫn cài đặt `Installation Locations`
+   - Cuối cùng ta ấn `Install` và chờ đợi để các gói được cài đặt. 
 
-3. **Khởi động Visual Studio Code**:  
+3. **Khởi động Visual Studio**:  
 
-   🎉 Sau khi hoàn tất cài đặt, hãy mở **Visual Studio Code** từ Menu Start hoặc màn hình chính.
+   🎉 Sau khi hoàn tất cài đặt, hãy mở **Visual Studio** từ Menu Start hoặc màn hình chính.
 
 ---
 

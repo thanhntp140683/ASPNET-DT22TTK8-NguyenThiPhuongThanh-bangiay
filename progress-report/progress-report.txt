@@ -21,3 +21,14 @@ Tuần 2:
 
 ✅ Quản lý danh mục, thương hiệu, màu sắc
  - Thêm/sửa danh mục, thương hiệu, màu sắc.
+
+Tuần 3:
+- Xử lý đăng nhập
+- Xử lý đăng ký
+- Lấy lại mật khẩu
+- Validate thêm sản phẩm
+- Sửa database(Thêm cột, thay đổi kiểu dữ liệu trong bảng Shoes)
+- Thêm chúc năng tìm kiếm
+- Thêm chức năng sort theo danh mục, thương hiệu, màu sắc
+- Xử lý giỏ hàng
+- Xử lý đặt hàng, chi tiết đơn hàng

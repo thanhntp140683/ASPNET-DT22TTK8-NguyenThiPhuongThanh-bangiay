@@ -1,5 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using ShoeStore.Data;
+using ShoeStore.Libraries;
+using ShoeStore.Models.Momo;
+using ShoeStore.Services.Momo;
+using ShoeStore.Services.Vnpay;
+using ShoeStore.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +22,12 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 builder.Services.AddSession();
+builder.Services.AddScoped<EmailService>();
+builder.Services.Configure<MomoOptionModel>(builder.Configuration.GetSection("MomoAPI"));
+builder.Services.AddScoped<IMomoService, MomoService>();
+
+builder.Services.AddScoped<IVnPayService, VnPayService>();
+builder.Services.AddScoped<VnPayLibrary>();
 var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

@@ -11,6 +11,8 @@ namespace ShoeStore.Data
         public DbSet<Size> Sizes { get; set; }
         public DbSet<Color> Colors { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
@@ -18,7 +20,6 @@ namespace ShoeStore.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Cấu hình quan hệ giữa các bảng
             modelBuilder.Entity<Shoe>()
                 .HasOne(s => s.Category)
                 .WithMany(c => c.Shoe)
@@ -42,6 +43,29 @@ namespace ShoeStore.Data
                 .WithMany(c => c.Shoes)
                 .HasForeignKey(s => s.ColorId)
                 .OnDelete(DeleteBehavior.SetNull);
+
+            modelBuilder.Entity<OrderDetail>()
+               .HasOne(od => od.Order) 
+               .WithMany(o => o.OrderDetails) 
+               .HasForeignKey(od => od.OrderId)
+               .HasPrincipalKey(o => o.OrderId);
+        }
+        public static void EnableSensitiveLogging(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.EnableSensitiveDataLogging();
+        }
+
+        public void EnsureSingleEntityTracking(Shoe shoe)
+        {
+            var trackedShoe = this.ChangeTracker.Entries<Shoe>()
+                .FirstOrDefault(e => e.Entity.Id == shoe.Id);
+
+            if (trackedShoe != null)
+            {
+                trackedShoe.State = EntityState.Detached;
+            }
+
+            this.Shoes.Update(shoe);
         }
     }
 }

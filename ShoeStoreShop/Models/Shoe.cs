@@ -35,5 +35,7 @@ namespace ShoeStore.Models
         public DateTime? Updated_At { get; set; }
 
         public ICollection<ShoeImage> ShoeImages { get; set; } = new List<ShoeImage>();
+        [Required, Column(TypeName = "INT")]
+        public int Amount { get; set; }
     }
 }

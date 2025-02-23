@@ -172,3 +172,9 @@ C:\Users\Admin\Desktop\ShoeStore\ShoeStore\bin\Debug\net8.0\runtimes\win\lib\net
 C:\Users\Admin\Desktop\ShoeStore\ShoeStore\obj\Debug\net8.0\ShoeStore.csproj.Up2Date
 C:\Users\Admin\Desktop\ShoeStore\ShoeStore\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Admin\Desktop\ShoeStore\ShoeStore\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\Admin\Desktop\ShoeStore\ShoeStore\obj\Debug\net8.0\ShoeStore.sourcelink.json
+C:\Users\Admin\Desktop\ShoeStore\ShoeStore\bin\Debug\net8.0\JsonConverter.Abstractions.dll
+C:\Users\Admin\Desktop\ShoeStore\ShoeStore\bin\Debug\net8.0\JsonConverter.Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\ShoeStore\ShoeStore\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\ShoeStore\ShoeStore\bin\Debug\net8.0\Stef.Validation.dll
+C:\Users\Admin\Desktop\ShoeStore\ShoeStore\bin\Debug\net8.0\RestSharp.dll

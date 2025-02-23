@@ -1,0 +1,49 @@
+﻿@model ShoeStore.Models.Vnpay.PaymentResponseModel
+@{
+    ViewData["Title"] = "Thanh toán";
+}﻿
+<section class="banner-area organic-breadcrumb">
+    <div class="container">
+        <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+            <div class="col-first">
+                <h1 class="text-center @(Model.VnPayResponseCode == "00" ? "text-success" : "text-danger")">
+                    @(Model.VnPayResponseCode == "00" ? "Thanh toán thành công!" : "Thanh toán thất bại")
+                </h1>
+                <nav class="d-flex align-items-center">
+                    <a href="index.html">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+                    <a href="category.html">Thông tin đặt hàng</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container mt-5">
+
+
+    <p class="text-center">
+        Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi.
+    </p>
+
+    <div class="card mt-4">
+        <div class="card-header bg-primary text-white">
+            <h4>Thông tin thanh toán</h4>
+        </div>
+        <div class="card-body">
+            <p><strong>Phương thức thanh toán:</strong> @Model.PaymentMethod</p>
+            <p><strong>Mô tả đơn hàng:</strong> @Model.OrderDescription</p>
+            <p><strong>Mã đơn hàng:</strong> @Model.OrderId</p>
+        </div>
+        <div class="card-footer text-center">
+            <p class="text-muted">
+                Vui lòng kiểm tra email của bạn để biết thêm thông tin chi tiết về giao dịch.
+            </p>
+        </div>
+    </div>
+
+    @if (!Model.Success)
+    {
+        <div class="alert alert-danger mt-3">
+            Giao dịch của bạn đã thất bại. Vui lòng thử lại hoặc liên hệ hỗ trợ.
+        </div>
+    }
+</div>

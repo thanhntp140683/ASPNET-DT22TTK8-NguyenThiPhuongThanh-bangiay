@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Trang chủ";
 }
 @model IEnumerable<ShoeStore.Models.Shoe>
 <!-- start banner Area -->
@@ -98,7 +98,7 @@
 					<div class="f-icon">
 						<img src="img/features/f-icon4.png" alt="">
 					</div>
-					<h6>Thanh toán bảo mẩ</h6>
+					<h6>Thanh toán bảo mật</h6>
 					<p>Miễn phí giao hàng với mọi hóa đơn</p>
 				</div>
 			</div>
@@ -207,7 +207,7 @@
 										<span class="ti-bag"></span>
 										<p class="hover-text">Thêm</p>
 									</a>
-									<a href="" class="social-info">
+								<a asp-controller="Product" asp-action="Index" asp-route-id="@shoe.Id" class="social-info" style="text-decoration: none">
 										<span class="lnr lnr-move"></span>
 										<p class="hover-text">Xem chi tiết</p>
 									</a>

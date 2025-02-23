@@ -1,12 +1,17 @@
-﻿    <!-- Start Banner Area -->
+﻿@{
+    ViewData["Title"] = "Giỏ hàng";
+}﻿
+
+@model List<CartItem>
+<!-- Start Banner Area -->
 <section class="banner-area organic-breadcrumb">
     <div class="container">
         <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
             <div class="col-first">
-                <h1>Shopping Cart</h1>
+                <h1>Giỏ hàng</h1>
                 <nav class="d-flex align-items-center">
-                    <a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-                    <a href="category.html">Cart</a>
+                    <a href="index.html">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+                    <a asp-controller="Cart" asp-action="Index">Giỏ hàng</a>
                 </nav>
             </div>
         </div>
@@ -14,193 +19,141 @@
 </section>
 <!-- End Banner Area -->
 <!--================Cart Area =================-->
+
 <section class="cart_area">
-    <div class="container">
-        <div class="cart_inner">
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Product</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Quantity</th>
-                            <th scope="col">Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="media">
-                                    <div class="d-flex">
-                                        <img src="img/cart.jpg" alt="">
-                                    </div>
-                                    <div class="media-body">
-                                        <p>Minimalistic shop for multipurpose use</p>
-                                    </div>
+    <form method="post" asp-action="Checkout" asp-controller="Payment" class="min-vh-100">
+        <input type="hidden" name="OrderType" value="other" />
+        <input type="hidden" name="OrderDescription" value="Thanh toán sản phẩm của Shoe Store" />
+        <input type="hidden" name="FullName" />
+        <input type="hidden" name="OrderInformation" value="Thanh toán sản phẩm của Shoe Store" />
+        <input type="hidden" name="Amount" value="@Model.Sum(item => item.Price * item.Quantity)" />
+        <input type="hidden" name="PaymentMethod" id="PaymentMethod" />
+        <div class="container">
+            <div class="cart_inner">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Sản phẩm</th>
+                                <th scope="col">Giá</th>
+                                <th scope="col">Số lượng</th>
+                                <th scope="col">Tổng</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="media">
+                                            <div class="d-flex">
+                                                <img src="@item.ImageUrl" alt="" style="width: 150px; height: 100px">
+                                            </div>
+                                            <div class="media-body">
+                                                <p>@item.Name</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h5>@item.Price.ToString("#,0") VNĐ</h5>
+                                    </td>
+                                    <td>
+                                        <form asp-action="UpdateQuantity" method="post" class="d-inline">
+                                            <div class="product_count">
+                                                <input type="hidden" name="Id" value="@item.Id" />
+                                                <input type="text" name="qty" id="sst" minlength="1" maxlength="12" value="@item.Quantity" title="Quantity:" disabled
+                                                class="input-text qty">
+                                                <button type="submit" name="action" value="increase"
+                                                        class="increase items-count">
+                                                    <i class="lnr lnr-chevron-up"></i>
+                                                </button>
+                                                <button type="submit" name="action" value="decrease"
+                                                class="reduced items-count">
+                                                    <i class="lnr lnr-chevron-down"></i>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <h5> @($"{(item.Price * item.Quantity):N0} VNĐ")</h5>
+                                    </td>
+
+                                    <td>
+                                        <form asp-action="RemoveFromCart" method="post" class="d-inline">
+                                            <input type="hidden" name="productId" value="@item.Id" />
+                                            <button type="submit" class="btn btn-danger btn-sm">Xóa</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                    <h5>Tổng tiền</h5>
+                                </td>
+                                <td>
+                                    <h5>@Model.Sum(item => item.Price * item.Quantity).ToString("#,0") VNĐ</h5>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+					
+                    </table>
+                    <div class="col-12 shipping_area d-flex">
+
+                        <div class="col-8">
+                            <h5>Thông tin giao hàng</h5>
+                            <div class="shipping_box">
+                                <div class="form-floating mb-3">
+                                    <input type="text" name="CustomerName" id="CustomerName" class="form-control" placeholder="Họ và tên" required>
+                                    <label for="CustomerName">Họ và tên</label>
                                 </div>
-                            </td>
-                            <td>
-                                <h5>$360.00</h5>
-                            </td>
-                            <td>
-                                <div class="product_count">
-                                    <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:"
-                                           class="input-text qty">
-                                    <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-                                            class="increase items-count" type="button">
-                                        <i class="lnr lnr-chevron-up"></i>
-                                    </button>
-                                    <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
-                                            class="reduced items-count" type="button">
-                                        <i class="lnr lnr-chevron-down"></i>
-                                    </button>
+                                <div class="form-floating mb-3">
+                                    <input type="text" name="Address" id="Address" class="form-control" placeholder="Địa chỉ giao hàng" required>
+                                    <label for="Address">Địa chỉ giao hàng</label>
                                 </div>
-                            </td>
-                            <td>
-                                <h5>$720.00</h5>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="media">
-                                    <div class="d-flex">
-                                        <img src="img/cart.jpg" alt="">
-                                    </div>
-                                    <div class="media-body">
-                                        <p>Minimalistic shop for multipurpose use</p>
-                                    </div>
+                                <div class="form-floating">
+                                    <input type="text" name="Phone" id="Phone" class="form-control" placeholder="Số điện thoại" required>
+                                    <label for="Phone">Số điện thoại</label>
                                 </div>
-                            </td>
-                            <td>
-                                <h5>$360.00</h5>
-                            </td>
-                            <td>
-                                <div class="product_count">
-                                    <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:"
-                                           class="input-text qty">
-                                    <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-                                            class="increase items-count" type="button">
-                                        <i class="lnr lnr-chevron-up"></i>
-                                    </button>
-                                    <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
-                                            class="reduced items-count" type="button">
-                                        <i class="lnr lnr-chevron-down"></i>
-                                    </button>
-                                </div>
-                            </td>
-                            <td>
-                                <h5>$720.00</h5>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="media">
-                                    <div class="d-flex">
-                                        <img src="img/cart.jpg" alt="">
-                                    </div>
-                                    <div class="media-body">
-                                        <p>Minimalistic shop for multipurpose use</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <h5>$360.00</h5>
-                            </td>
-                            <td>
-                                <div class="product_count">
-                                    <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:"
-                                           class="input-text qty">
-                                    <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-                                            class="increase items-count" type="button">
-                                        <i class="lnr lnr-chevron-up"></i>
-                                    </button>
-                                    <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
-                                            class="reduced items-count" type="button">
-                                        <i class="lnr lnr-chevron-down"></i>
-                                    </button>
-                                </div>
-                            </td>
-                            <td>
-                                <h5>$720.00</h5>
-                            </td>
-                        </tr>
-                        <tr class="bottom_button">
-                            <td>
-                                <a class="gray_btn" href="#">Update Cart</a>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                                <div class="cupon_text d-flex align-items-center">
-                                    <input type="text" placeholder="Coupon Code">
-                                    <a class="primary-btn" href="#">Apply</a>
-                                    <a class="gray_btn" href="#">Close Coupon</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                                <h5>Subtotal</h5>
-                            </td>
-                            <td>
-                                <h5>$2160.00</h5>
-                            </td>
-                        </tr>
-                        <tr class="shipping_area">
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                                <h5>Shipping</h5>
-                            </td>
-                            <td>
-                                <div class="shipping_box">
-                                    <ul class="list">
-                                        <li><a href="#">Flat Rate: $5.00</a></li>
-                                        <li><a href="#">Free Shipping</a></li>
-                                        <li><a href="#">Flat Rate: $10.00</a></li>
-                                        <li class="active"><a href="#">Local Delivery: $2.00</a></li>
-                                    </ul>
-                                    <h6>Calculate Shipping <i class="fa fa-caret-down" aria-hidden="true"></i></h6>
-                                    <select class="shipping_select">
-                                        <option value="1">Bangladesh</option>
-                                        <option value="2">India</option>
-                                        <option value="4">Pakistan</option>
-                                    </select>
-                                    <select class="shipping_select">
-                                        <option value="1">Select a State</option>
-                                        <option value="2">Select a State</option>
-                                        <option value="4">Select a State</option>
-                                    </select>
-                                    <input type="text" placeholder="Postcode/Zipcode">
-                                    <a class="gray_btn" href="#">Update Details</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="out_button_area">
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                                <div class="checkout_btn_inner d-flex align-items-center">
-                                    <a class="gray_btn" href="#">Continue Shopping</a>
-                                    <a class="primary-btn" href="#">Proceed to checkout</a>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                            </div>
+                        </div>
+                        <div class="out_button_area col-4 mt-5">
+                            <div class="checkout_btn_inner">
+                                <button type="submit" class="primary-btn" onclick="setPaymentMethod('Momo')">Thanh toán Momo</button>
+                                <br />
+                                <button type="submit" class="primary-btn" onclick="setPaymentMethod('VnPay')">Thanh toán VnPay</button>
+                                <br />
+                                <button type="submit" class="primary-btn" onclick="setPaymentMethod('COD')">Thanh toán COD</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </form>
 </section>
+<script>
+    document.getElementById('CustomerName').addEventListener('input', function() {
+        document.querySelector('input[name="FullName"]').value = this.value;
+    });
+
+    document.querySelector('select[name="PaymentMethodSelect"]').addEventListener('change', function() {
+        document.getElementById('PaymentMethod').value = this.value;
+    });
+
+    window.onload = function() {
+        document.querySelector('input[name="FullName"]').value = document.getElementById('CustomerName').value;
+    }
+</script>
+<script>
+    // Hàm set giá trị PaymentMethod trước khi gửi form
+    function setPaymentMethod(method) {
+        document.getElementById('PaymentMethod').value = method;
+    }
+</script>

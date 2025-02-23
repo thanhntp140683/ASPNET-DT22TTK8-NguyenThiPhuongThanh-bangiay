@@ -80,33 +80,36 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" asp-action="Index" asp-controller="Home">Trang chủ</a></li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								   aria-expanded="false">Cửa hàng</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="Category">Sản phẩm</a></li>
-									<li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="Product">Chi tiết sản phầm</a></li>
-									<li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="Cart">Giỏ hàng</a></li>
-								</ul>
+							@{
+								var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+								var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+							}
+
+							<li class="nav-item @(currentController == "Home" && currentAction == "Index" ? "active" : "")">
+								<a class="nav-link" asp-action="Index" asp-controller="Home">Trang chủ</a>
 							</li>
-							<li class="nav-item submenu dropdown">
-								<a asp-action="Index" asp-controller="Blog" class="nav-link" role="button" aria-haspopup="true"
-								   aria-expanded="false">Tin tức</a>
+
+							<li class="nav-item submenu dropdown @(currentController == "Store" ? "active" : "")">
+								<a class="nav-link" asp-action="Index" asp-controller="Store">Cửa hàng</a>
 							</li>
-							<li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="Contact">Liên hệ</a></li>
+
+							<li class="nav-item submenu dropdown @(currentController == "Blog" ? "active" : "")">
+								<a asp-action="Index" asp-controller="Blog" class="nav-link">Tin tức</a>
+							</li>
+
+							<li class="nav-item @(currentController == "Contact" ? "active" : "")">
+								<a class="nav-link" asp-action="Index" asp-controller="Contact">Liên hệ</a>
+							</li>
 
 							@if (Context.Session.GetString("FullName") != null)
 							{
 								<li class="nav-item submenu dropdown">
-									<p class="nav-link" data-toggle="dropdown" role="button" aria-haspopup="true">Xin chào, @Context.Session.GetString("FullName")</p>
+									<p class="nav-link" data-toggle="dropdown" role="button">Xin chào, @Context.Session.GetString("FullName")</p>
 									<ul class="dropdown-menu">
-										<li>
-											<a class="dropdown-item" asp-action="Logout" asp-controller="Login"> Đăng xuất tài khoản</a>
-										</li>
+										<li><a class="dropdown-item" asp-action="Logout" asp-controller="Login">Đăng xuất tài khoản</a></li>
 										@if (Context.Session.GetString("Role") == "Admin")
 										{
-											<li><a class="dropdown-item pt-3" href="/Admin/Dashboard">Đến trang quản lý</a> </li>
+											<li><a class="dropdown-item pt-3" href="/Admin/Dashboard">Đến trang quản lý</a></li>
 										}
 									</ul>
 								</li>
@@ -114,16 +117,13 @@
 							else
 							{
 								<li class="nav-item submenu dropdown">
-									<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-									   aria-expanded="false">Đăng nhập</a>
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">Đăng nhập</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="Login">Đăng nhập</a></li>
 										<li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="Login">Đăng ký</a></li>
 									</ul>
 								</li>
 							}
-							
-							
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="nav-item"><a asp-action="Index" asp-controller="Cart" class="cart"><span class="ti-bag"></span></a></li>
@@ -137,8 +137,8 @@
 		</div>
 		<div class="search_input" id="search_input_box">
 			<div class="container">
-				<form class="d-flex justify-content-between">
-					<input type="text" class="form-control" id="search_input" placeholder="Tìm kiếm ở đây">
+				<form method="get" action="@Url.Action("Index", "Store")" class="d-flex justify-content-between">
+					<input type="text" class="form-control" id="search_input" name="keyword" placeholder="Tìm kiếm ở đây">
 					<button type="submit" class="btn"></button>
 					<span class="lnr lnr-cross" id="close_search" title="Đóng tìm kiếm"></span>
 				</form>
@@ -293,8 +293,8 @@
     <script src="~/js/owl.carousel.min.js"></script>
     <!--gmaps Js-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-    <script src="js/gmaps.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="~/js/gmaps.min.js"></script>
+    <script src="~/js/main.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

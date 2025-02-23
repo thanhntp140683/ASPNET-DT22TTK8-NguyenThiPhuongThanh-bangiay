@@ -161,11 +161,12 @@ namespace ShoeStore.Controllers
         }
 
 
-
+        [HttpGet]
+        [Route("/Logout")]
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();
-            return RedirectToAction("Login", "Account");
+            return RedirectToAction( "Index", "Login");
         }
     }
 }

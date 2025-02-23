@@ -282,5 +282,19 @@ namespace ShoeStore.Areas.Admin.Controllers
             }
             return RedirectToAction("Index");
         }
+        [HttpGet("Admin/Products/Delete/{id}")]
+        public IActionResult Delete(int id)
+        {
+            var shoe = _context.Shoes.Find(id);
+            if (shoe == null)
+            {
+                return NotFound();
+            }
+            _context.Shoes.Remove(shoe);
+            _context.SaveChanges();
+
+            TempData["Success"] = "Xóa sản phẩm thành công!";
+            return RedirectToAction("Index");
+        }
     }
 }

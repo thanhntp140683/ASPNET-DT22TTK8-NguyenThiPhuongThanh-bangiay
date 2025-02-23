@@ -1,0 +1,156 @@
+﻿@{
+    ViewData["Title"] = "Cửa hàng";
+}
+
+@model IEnumerable<ShoeStore.Models.Shoe>
+
+<!-- Start Banner Area -->
+<section class="banner-area organic-breadcrumb">
+    <div class="container">
+        <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+            <div class="col-first">
+                <h1>Trang cửa hàng</h1>
+                <nav class="d-flex align-items-center">
+                    <a asp-controller="Home" asp-action="Index">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+                    <a asp-controller="Store" asp-action="Index">Cửa hàng</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Banner Area -->
+
+<div class="container">
+    <div class="row">
+        <!-- Sidebar Filter -->
+        <div class="col-xl-3 col-lg-4 col-md-5">
+            <form method="get" action="@Url.Action("Index", "Store")" id="filterForm">
+                <div class="sidebar-filter mt-5">
+                    <div class="top-filter-head">Bộ lọc sản phẩm</div>
+
+                    <!-- Lọc theo Danh mục -->
+                    <div class="common-filter">
+                        <div class="head">Danh mục</div>
+                        <ul>
+                            <li class="filter-list">
+                                <input class="pixel-radio" type="radio" name="category" id="categoryNone" value="" onchange="submitFilter()"
+                                @(ViewBag.SelectedCategory == null ? "checked" : "")>
+                                <label for="categoryNone">Tất cả</label>
+                            </li>
+                            @foreach (var category in ViewBag.Categories)
+                            {
+                                <li class="filter-list">
+                                    <input class="pixel-radio" type="radio" name="category" id="category@category.Id" value="@category.Id" onchange="submitFilter()"
+                                    @(ViewBag.SelectedCategory == category.Id ? "checked" : "")>
+                                    <label for="category@category.Id">@category.Name <span>(@category.ProductCount)</span></label>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+
+                    <!-- Lọc theo Thương hiệu -->
+                    <div class="common-filter">
+                        <div class="head">Thương hiệu</div>
+                        <ul>
+                            <li class="filter-list">
+                                <input class="pixel-radio" type="radio" name="brand" id="brandNone" value="" onchange="submitFilter()"
+                                @(ViewBag.SelectedBrand == null ? "checked" : "")>
+                                <label for="brandNone">Tất cả</label>
+                            </li>
+                            @foreach (var brand in ViewBag.Brands)
+                            {
+                                <li class="filter-list">
+                                    <input class="pixel-radio" type="radio" name="brand" id="brand@brand.Id" value="@brand.Id" onchange="submitFilter()"
+                                    @(ViewBag.SelectedBrand == brand.Id ? "checked" : "")>
+                                    <label for="brand@brand.Id">@brand.Name <span>(@brand.ProductCount)</span></label>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+
+                    <!-- Lọc theo Màu sắc -->
+                    <div class="common-filter">
+                        <div class="head">Màu sắc</div>
+                        <ul>
+                            <li class="filter-list">
+                                <input class="pixel-radio" type="radio" name="color" id="colorNone" value="" onchange="submitFilter()"
+                                @(ViewBag.SelectedColor == null ? "checked" : "")>
+                                <label for="colorNone">Tất cả</label>
+                            </li>
+                            @foreach (var color in ViewBag.Colors)
+                            {
+                                <li class="filter-list">
+                                    <input class="pixel-radio" type="radio" name="color" id="color@color.Id" value="@color.Id" onchange="submitFilter()"
+                                    @(ViewBag.SelectedColor == color.Id ? "checked" : "")>
+                                    <label for="color@color.Id">@color.Name <span>(@color.ProductCount)</span></label>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Main Product List -->
+        <div class="col-xl-9 col-lg-8 col-md-7 mt-5">
+            <div class="filter-bar d-flex flex-wrap align-items-center">
+            </div>
+
+            <section class="lattest-product-area pb-40 category-list">
+                <div class="row">
+                    @foreach (var product in Model)
+                    {
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-product">
+                                <img style="width: 305px; height: 325px" src="@((product.ShoeImages != null && product.ShoeImages.Any()) ? product.ShoeImages.First().Image_Url : "img/product/p1.jpg")"
+                                     alt="@product.Name" class="product-image" />
+                                <div class="product-details">
+                                    <h6>@product.Name</h6>
+                                    <div class="price">
+                                        <h6>@product.Price.ToString("N0") đ</h6>
+                                    </div>
+                                    <div class="prd-bottom">
+                                        <a href="#" class="social-info">
+                                            <span class="ti-bag"></span>
+                                            <p class="hover-text">Thêm</p>
+                                        </a>
+                                        <a href="@Url.Action("Index", "Product", new { id = product.Id })" class="social-info">
+                                            <span class="lnr lnr-move"></span>
+                                            <p class="hover-text">Xem thêm</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </section>
+
+        </div>
+    </div>
+</div>
+<script>
+    function submitFilter() {
+        document.getElementById("filterForm").submit();
+    }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        function handleCheckboxClick(event) {
+            let groupName = event.target.name;
+
+            // Bỏ chọn tất cả checkbox khác trong cùng nhóm
+            document.querySelectorAll(`input[name='${groupName}']`).forEach(checkbox => {
+                if (checkbox !== event.target) {
+                    checkbox.checked = false;
+                }
+            });
+        }
+
+        // Lắng nghe sự kiện click cho tất cả checkbox trong 3 nhóm
+        document.querySelectorAll("input[name='category'], input[name='brand'], input[name='color']")
+            .forEach(checkbox => {
+                checkbox.addEventListener("change", handleCheckboxClick);
+            });
+    });
+</script>
