@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "B+o0l7bu6QbxVh/INbion5fNpOjCuIZEURL73rgeJjk=",
+  "Hash": "4gKGNZRSMnQWYnyLN5jl9LOEcwZCQrtdb7+ne+7ucdI=",
   "Source": "ShoeStore",
   "BasePath": "_content/ShoeStore",
   "Mode": "Default",
@@ -8984,6 +8984,27 @@
       "OriginalItemSpec": "wwwroot\\scss\\theme\\_variables.scss"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\053ae387-3854-4f26-b6ef-d5bdbc2e6ee3.jpg",
+      "SourceId": "ShoeStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\",
+      "BasePath": "_content/ShoeStore",
+      "RelativePath": "uploads/053ae387-3854-4f26-b6ef-d5bdbc2e6ee3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cf6l0swef8",
+      "Integrity": "OHzOsXJzPcXBfV9Gw1kXLJonX3Lm3MLWKjGddci6mxQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\053ae387-3854-4f26-b6ef-d5bdbc2e6ee3.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\071f6a82-799b-4507-bce6-65e8024d8e09.jpg",
       "SourceId": "ShoeStore",
       "SourceType": "Discovered",
@@ -9024,6 +9045,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\07326bdb-d6b3-453d-823f-6b67bf7def82.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\0e851af0-7528-4d8f-9fb0-b3977d4e39c3.webp",
+      "SourceId": "ShoeStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\",
+      "BasePath": "_content/ShoeStore",
+      "RelativePath": "uploads/0e851af0-7528-4d8f-9fb0-b3977d4e39c3#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f465uad2wj",
+      "Integrity": "P0QL5HEeQ449NiWi4nz74JeHOKPaoofKoOWSG9yx9AE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\0e851af0-7528-4d8f-9fb0-b3977d4e39c3.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\0e875867-ef01-4a06-a775-4bda86ec4ced.webp",
+      "SourceId": "ShoeStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\",
+      "BasePath": "_content/ShoeStore",
+      "RelativePath": "uploads/0e875867-ef01-4a06-a775-4bda86ec4ced#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l3d5elfs2z",
+      "Integrity": "kQMpM+Vl6ZcSr+XLcIfEoVEesx4oijFMuCwy4abT15c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\0e875867-ef01-4a06-a775-4bda86ec4ced.webp"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\12e5f393-6aad-436f-a97d-eab3e8183656.jpg",
@@ -9087,6 +9150,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\1826a527-9152-4dbf-9e09-c1abc52c3e2a.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\1ba439da-efed-4d24-b27d-ca8f701740cb.jpg",
+      "SourceId": "ShoeStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\",
+      "BasePath": "_content/ShoeStore",
+      "RelativePath": "uploads/1ba439da-efed-4d24-b27d-ca8f701740cb#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n4pvfsbxpf",
+      "Integrity": "99/BDqZpdHZuiusuzcALpAAb8OfdY1RPt8vQ4ytstcE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\1ba439da-efed-4d24-b27d-ca8f701740cb.jpg"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\236fe949-3df8-43dd-991d-1402bcb80436.png",
@@ -9173,6 +9257,27 @@
       "OriginalItemSpec": "wwwroot\\uploads\\36d1ce9f-e252-48a8-93f7-a9fde2e8b982.jpg"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\370116bc-b56e-4b5a-b5cb-fa06202a2560.png",
+      "SourceId": "ShoeStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\",
+      "BasePath": "_content/ShoeStore",
+      "RelativePath": "uploads/370116bc-b56e-4b5a-b5cb-fa06202a2560#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z6qfnwajw0",
+      "Integrity": "W4nCK3/RHs4eceqLeHAABJ5oKcxUdUH/Ew78jq1s8i4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\370116bc-b56e-4b5a-b5cb-fa06202a2560.png"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\3ca5bc3a-2097-4a2c-8065-7e250865517c.png",
       "SourceId": "ShoeStore",
       "SourceType": "Discovered",
@@ -9192,6 +9297,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\3ca5bc3a-2097-4a2c-8065-7e250865517c.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\3e342cfc-e305-4484-975a-861670c49bcf.webp",
+      "SourceId": "ShoeStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\",
+      "BasePath": "_content/ShoeStore",
+      "RelativePath": "uploads/3e342cfc-e305-4484-975a-861670c49bcf#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vsw9km68v5",
+      "Integrity": "seW+mUJIYVWANwJhPX6oChU3EVeQb2v+/W+UIrEQDH4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\3e342cfc-e305-4484-975a-861670c49bcf.webp"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\495634cb-2382-443c-960e-598cba012c2e.jpg",
@@ -9278,6 +9404,27 @@
       "OriginalItemSpec": "wwwroot\\uploads\\53238e5a-4681-4508-a6e7-d6d0d2e923e3.jpg"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\5992254e-1b4b-4da2-9c31-449ea36a6963.webp",
+      "SourceId": "ShoeStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\",
+      "BasePath": "_content/ShoeStore",
+      "RelativePath": "uploads/5992254e-1b4b-4da2-9c31-449ea36a6963#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l3d5elfs2z",
+      "Integrity": "kQMpM+Vl6ZcSr+XLcIfEoVEesx4oijFMuCwy4abT15c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\5992254e-1b4b-4da2-9c31-449ea36a6963.webp"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\61641c9e-148a-4bb3-9a8d-c7b5b31e72d6.jpg",
       "SourceId": "ShoeStore",
       "SourceType": "Discovered",
@@ -9297,6 +9444,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\61641c9e-148a-4bb3-9a8d-c7b5b31e72d6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\6dacca73-fe85-4bc1-abcb-338188bb2bbe.jpg",
+      "SourceId": "ShoeStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\",
+      "BasePath": "_content/ShoeStore",
+      "RelativePath": "uploads/6dacca73-fe85-4bc1-abcb-338188bb2bbe#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jq86ze37xy",
+      "Integrity": "RaOrM4BW7e39kf6g+qbNZ6zAccQvPxBHv4mzffko0XM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\6dacca73-fe85-4bc1-abcb-338188bb2bbe.jpg"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\6e342cde-7ecd-46bc-959b-ddfb62f2e9b2.jpg",
@@ -9339,6 +9507,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\6fcfc725-ab36-4d4c-b12e-24162ea11518.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\749cecb2-0b71-4185-b0a3-1bd94706a8e9.avif",
+      "SourceId": "ShoeStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\",
+      "BasePath": "_content/ShoeStore",
+      "RelativePath": "uploads/749cecb2-0b71-4185-b0a3-1bd94706a8e9#[.{fingerprint}]?.avif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hicmpp4eki",
+      "Integrity": "2WW6V34XepJHtbEnLcTChBw8Nktt+ksR1HGzdknPod0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\749cecb2-0b71-4185-b0a3-1bd94706a8e9.avif"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\78ed836e-5c93-4686-bdc3-654068dadb3f.webp",
+      "SourceId": "ShoeStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\",
+      "BasePath": "_content/ShoeStore",
+      "RelativePath": "uploads/78ed836e-5c93-4686-bdc3-654068dadb3f#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vsw9km68v5",
+      "Integrity": "seW+mUJIYVWANwJhPX6oChU3EVeQb2v+/W+UIrEQDH4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\78ed836e-5c93-4686-bdc3-654068dadb3f.webp"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\80c5556f-43b7-4e9d-9b3a-4595e21f831d.jpg",
@@ -9404,6 +9614,27 @@
       "OriginalItemSpec": "wwwroot\\uploads\\87611862-161a-48ed-b22e-9a92cca52c9c.jpg"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\89085d19-2b07-4147-8224-748922c19a1a.jpg",
+      "SourceId": "ShoeStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\",
+      "BasePath": "_content/ShoeStore",
+      "RelativePath": "uploads/89085d19-2b07-4147-8224-748922c19a1a#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cf6l0swef8",
+      "Integrity": "OHzOsXJzPcXBfV9Gw1kXLJonX3Lm3MLWKjGddci6mxQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\89085d19-2b07-4147-8224-748922c19a1a.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\8a22b0d3-bea5-4181-80c6-4fa94214935f.jpg",
       "SourceId": "ShoeStore",
       "SourceType": "Discovered",
@@ -9425,6 +9656,27 @@
       "OriginalItemSpec": "wwwroot\\uploads\\8a22b0d3-bea5-4181-80c6-4fa94214935f.jpg"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\8b6a5c30-f2cf-40d2-af36-2beaef377899.jpg",
+      "SourceId": "ShoeStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\",
+      "BasePath": "_content/ShoeStore",
+      "RelativePath": "uploads/8b6a5c30-f2cf-40d2-af36-2beaef377899#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7lldon1d9i",
+      "Integrity": "dS3RpWDqjIi+8vESK6JpZlqoTQLqgIYWROH+qSsi6J0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\8b6a5c30-f2cf-40d2-af36-2beaef377899.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\8d14f8ec-f06f-403e-b18b-f0a6cf036ce5.png",
       "SourceId": "ShoeStore",
       "SourceType": "Discovered",
@@ -9444,6 +9696,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\8d14f8ec-f06f-403e-b18b-f0a6cf036ce5.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\9e7f52c4-2cb8-4031-9d2a-694818495d64.png",
+      "SourceId": "ShoeStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\",
+      "BasePath": "_content/ShoeStore",
+      "RelativePath": "uploads/9e7f52c4-2cb8-4031-9d2a-694818495d64#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pw1mncetpk",
+      "Integrity": "Kfql2OKqj3paiFHz7iFJYf5PCZzoMhvEs4xk05ZVqtk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\9e7f52c4-2cb8-4031-9d2a-694818495d64.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\9e9b7e54-3da5-49fc-bee1-e86ca055d8c4.png",
+      "SourceId": "ShoeStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\",
+      "BasePath": "_content/ShoeStore",
+      "RelativePath": "uploads/9e9b7e54-3da5-49fc-bee1-e86ca055d8c4#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7gzznbohl2",
+      "Integrity": "yR77ZESBT5nG4rE/Wcw2ZXGlXzJQlfxnI5fAn4ct9Qo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\9e9b7e54-3da5-49fc-bee1-e86ca055d8c4.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\a0a4ba60-b467-4931-bb23-8435f57b3b0b.jpg",
+      "SourceId": "ShoeStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\",
+      "BasePath": "_content/ShoeStore",
+      "RelativePath": "uploads/a0a4ba60-b467-4931-bb23-8435f57b3b0b#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7iketfot9o",
+      "Integrity": "sQfPqzK9Tkr9u9oCwb3vM5S6/bQzgX9l31rtH7+JHx4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\a0a4ba60-b467-4931-bb23-8435f57b3b0b.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\a118dd54-4f92-45dc-ab8e-8925e2b25afa.jpg",
+      "SourceId": "ShoeStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\",
+      "BasePath": "_content/ShoeStore",
+      "RelativePath": "uploads/a118dd54-4f92-45dc-ab8e-8925e2b25afa#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8b7e9ye97k",
+      "Integrity": "fFL7Do41MkrfTi0CDs/daos6BccnYchD+T7MEqPy4jQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\a118dd54-4f92-45dc-ab8e-8925e2b25afa.jpg"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\a3e21fd6-0c4f-4660-b18f-c4ba9c547d9c.jpg",
@@ -9528,6 +9864,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\c10d78fc-3aeb-4265-a061-3b20039f5dbd.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\cb547cf7-4786-4f0b-a8ab-cdbb4c924304.avif",
+      "SourceId": "ShoeStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\",
+      "BasePath": "_content/ShoeStore",
+      "RelativePath": "uploads/cb547cf7-4786-4f0b-a8ab-cdbb4c924304#[.{fingerprint}]?.avif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hicmpp4eki",
+      "Integrity": "2WW6V34XepJHtbEnLcTChBw8Nktt+ksR1HGzdknPod0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\cb547cf7-4786-4f0b-a8ab-cdbb4c924304.avif"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\d90ed40a-155a-4924-9ca5-1d4b12b847e1.jpg",
@@ -9633,6 +9990,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\ed83684c-3c10-4660-9609-929d35653c30.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\f55bd638-0f22-4184-8cbe-1c0b4048a1f0.webp",
+      "SourceId": "ShoeStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\",
+      "BasePath": "_content/ShoeStore",
+      "RelativePath": "uploads/f55bd638-0f22-4184-8cbe-1c0b4048a1f0#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gd2411lbw2",
+      "Integrity": "/MVnTcX3icSdOpVeG18BkLLDa1U0cXSSupPOT4k3jw8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\f55bd638-0f22-4184-8cbe-1c0b4048a1f0.webp"
     }
   ],
   "Endpoints": [
@@ -44651,6 +45029,88 @@
       ]
     },
     {
+      "Route": "uploads/053ae387-3854-4f26-b6ef-d5bdbc2e6ee3.cf6l0swef8.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\053ae387-3854-4f26-b6ef-d5bdbc2e6ee3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "694447"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OHzOsXJzPcXBfV9Gw1kXLJonX3Lm3MLWKjGddci6mxQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 18:30:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cf6l0swef8"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/053ae387-3854-4f26-b6ef-d5bdbc2e6ee3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OHzOsXJzPcXBfV9Gw1kXLJonX3Lm3MLWKjGddci6mxQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/053ae387-3854-4f26-b6ef-d5bdbc2e6ee3.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\053ae387-3854-4f26-b6ef-d5bdbc2e6ee3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "694447"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OHzOsXJzPcXBfV9Gw1kXLJonX3Lm3MLWKjGddci6mxQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 18:30:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OHzOsXJzPcXBfV9Gw1kXLJonX3Lm3MLWKjGddci6mxQ="
+        }
+      ]
+    },
+    {
       "Route": "uploads/071f6a82-799b-4507-bce6-65e8024d8e09.fbvxuwdysq.jpg",
       "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\071f6a82-799b-4507-bce6-65e8024d8e09.jpg",
       "Selectors": [],
@@ -44811,6 +45271,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-U0wYmV2wmeLl6SwdWXcfpO2fBqX558uE7DSYyPCwaXs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/0e851af0-7528-4d8f-9fb0-b3977d4e39c3.f465uad2wj.webp",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\0e851af0-7528-4d8f-9fb0-b3977d4e39c3.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20348"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P0QL5HEeQ449NiWi4nz74JeHOKPaoofKoOWSG9yx9AE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f465uad2wj"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/0e851af0-7528-4d8f-9fb0-b3977d4e39c3.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-P0QL5HEeQ449NiWi4nz74JeHOKPaoofKoOWSG9yx9AE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/0e851af0-7528-4d8f-9fb0-b3977d4e39c3.webp",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\0e851af0-7528-4d8f-9fb0-b3977d4e39c3.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20348"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P0QL5HEeQ449NiWi4nz74JeHOKPaoofKoOWSG9yx9AE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-P0QL5HEeQ449NiWi4nz74JeHOKPaoofKoOWSG9yx9AE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/0e875867-ef01-4a06-a775-4bda86ec4ced.l3d5elfs2z.webp",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\0e875867-ef01-4a06-a775-4bda86ec4ced.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22684"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kQMpM+Vl6ZcSr+XLcIfEoVEesx4oijFMuCwy4abT15c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:52:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l3d5elfs2z"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/0e875867-ef01-4a06-a775-4bda86ec4ced.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kQMpM+Vl6ZcSr+XLcIfEoVEesx4oijFMuCwy4abT15c="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/0e875867-ef01-4a06-a775-4bda86ec4ced.webp",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\0e875867-ef01-4a06-a775-4bda86ec4ced.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22684"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kQMpM+Vl6ZcSr+XLcIfEoVEesx4oijFMuCwy4abT15c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:52:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kQMpM+Vl6ZcSr+XLcIfEoVEesx4oijFMuCwy4abT15c="
         }
       ]
     },
@@ -45057,6 +45681,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-jWddipMeQX+XmH8gdE1v7lDMUb+fa/UY7jcRSxzUNDI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/1ba439da-efed-4d24-b27d-ca8f701740cb.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\1ba439da-efed-4d24-b27d-ca8f701740cb.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "411901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"99/BDqZpdHZuiusuzcALpAAb8OfdY1RPt8vQ4ytstcE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 10:48:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-99/BDqZpdHZuiusuzcALpAAb8OfdY1RPt8vQ4ytstcE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/1ba439da-efed-4d24-b27d-ca8f701740cb.n4pvfsbxpf.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\1ba439da-efed-4d24-b27d-ca8f701740cb.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "411901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"99/BDqZpdHZuiusuzcALpAAb8OfdY1RPt8vQ4ytstcE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 10:48:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n4pvfsbxpf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/1ba439da-efed-4d24-b27d-ca8f701740cb.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-99/BDqZpdHZuiusuzcALpAAb8OfdY1RPt8vQ4ytstcE="
         }
       ]
     },
@@ -45389,6 +46095,88 @@
       ]
     },
     {
+      "Route": "uploads/370116bc-b56e-4b5a-b5cb-fa06202a2560.png",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\370116bc-b56e-4b5a-b5cb-fa06202a2560.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22230"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W4nCK3/RHs4eceqLeHAABJ5oKcxUdUH/Ew78jq1s8i4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 18:30:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-W4nCK3/RHs4eceqLeHAABJ5oKcxUdUH/Ew78jq1s8i4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/370116bc-b56e-4b5a-b5cb-fa06202a2560.z6qfnwajw0.png",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\370116bc-b56e-4b5a-b5cb-fa06202a2560.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22230"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W4nCK3/RHs4eceqLeHAABJ5oKcxUdUH/Ew78jq1s8i4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 18:30:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z6qfnwajw0"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/370116bc-b56e-4b5a-b5cb-fa06202a2560.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-W4nCK3/RHs4eceqLeHAABJ5oKcxUdUH/Ew78jq1s8i4="
+        }
+      ]
+    },
+    {
       "Route": "uploads/3ca5bc3a-2097-4a2c-8065-7e250865517c.d2vnoum2uo.png",
       "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\3ca5bc3a-2097-4a2c-8065-7e250865517c.png",
       "Selectors": [],
@@ -45467,6 +46255,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-BS29T8HZ7RIRSp82893B7EXH4UeqvnaRX+wxCJ79b34="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/3e342cfc-e305-4484-975a-861670c49bcf.vsw9km68v5.webp",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\3e342cfc-e305-4484-975a-861670c49bcf.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24452"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"seW+mUJIYVWANwJhPX6oChU3EVeQb2v+/W+UIrEQDH4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:54:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vsw9km68v5"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/3e342cfc-e305-4484-975a-861670c49bcf.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-seW+mUJIYVWANwJhPX6oChU3EVeQb2v+/W+UIrEQDH4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/3e342cfc-e305-4484-975a-861670c49bcf.webp",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\3e342cfc-e305-4484-975a-861670c49bcf.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24452"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"seW+mUJIYVWANwJhPX6oChU3EVeQb2v+/W+UIrEQDH4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:54:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-seW+mUJIYVWANwJhPX6oChU3EVeQb2v+/W+UIrEQDH4="
         }
       ]
     },
@@ -45799,6 +46669,88 @@
       ]
     },
     {
+      "Route": "uploads/5992254e-1b4b-4da2-9c31-449ea36a6963.l3d5elfs2z.webp",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\5992254e-1b4b-4da2-9c31-449ea36a6963.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22684"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kQMpM+Vl6ZcSr+XLcIfEoVEesx4oijFMuCwy4abT15c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:53:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l3d5elfs2z"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/5992254e-1b4b-4da2-9c31-449ea36a6963.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kQMpM+Vl6ZcSr+XLcIfEoVEesx4oijFMuCwy4abT15c="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/5992254e-1b4b-4da2-9c31-449ea36a6963.webp",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\5992254e-1b4b-4da2-9c31-449ea36a6963.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22684"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kQMpM+Vl6ZcSr+XLcIfEoVEesx4oijFMuCwy4abT15c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:53:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kQMpM+Vl6ZcSr+XLcIfEoVEesx4oijFMuCwy4abT15c="
+        }
+      ]
+    },
+    {
       "Route": "uploads/61641c9e-148a-4bb3-9a8d-c7b5b31e72d6.7lldon1d9i.jpg",
       "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\61641c9e-148a-4bb3-9a8d-c7b5b31e72d6.jpg",
       "Selectors": [],
@@ -45877,6 +46829,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-dS3RpWDqjIi+8vESK6JpZlqoTQLqgIYWROH+qSsi6J0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/6dacca73-fe85-4bc1-abcb-338188bb2bbe.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\6dacca73-fe85-4bc1-abcb-338188bb2bbe.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "175719"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RaOrM4BW7e39kf6g+qbNZ6zAccQvPxBHv4mzffko0XM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 10:48:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RaOrM4BW7e39kf6g+qbNZ6zAccQvPxBHv4mzffko0XM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/6dacca73-fe85-4bc1-abcb-338188bb2bbe.jq86ze37xy.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\6dacca73-fe85-4bc1-abcb-338188bb2bbe.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "175719"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RaOrM4BW7e39kf6g+qbNZ6zAccQvPxBHv4mzffko0XM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 10:48:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jq86ze37xy"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/6dacca73-fe85-4bc1-abcb-338188bb2bbe.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RaOrM4BW7e39kf6g+qbNZ6zAccQvPxBHv4mzffko0XM="
         }
       ]
     },
@@ -46041,6 +47075,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-y8rZhNDj8dxdhAuNU+AJO+AYKp3Sh8zF62k1EcdM0Ws="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/749cecb2-0b71-4185-b0a3-1bd94706a8e9.avif",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\749cecb2-0b71-4185-b0a3-1bd94706a8e9.avif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9335"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2WW6V34XepJHtbEnLcTChBw8Nktt+ksR1HGzdknPod0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:49:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2WW6V34XepJHtbEnLcTChBw8Nktt+ksR1HGzdknPod0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/749cecb2-0b71-4185-b0a3-1bd94706a8e9.hicmpp4eki.avif",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\749cecb2-0b71-4185-b0a3-1bd94706a8e9.avif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9335"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2WW6V34XepJHtbEnLcTChBw8Nktt+ksR1HGzdknPod0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:49:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hicmpp4eki"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/749cecb2-0b71-4185-b0a3-1bd94706a8e9.avif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2WW6V34XepJHtbEnLcTChBw8Nktt+ksR1HGzdknPod0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/78ed836e-5c93-4686-bdc3-654068dadb3f.vsw9km68v5.webp",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\78ed836e-5c93-4686-bdc3-654068dadb3f.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24452"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"seW+mUJIYVWANwJhPX6oChU3EVeQb2v+/W+UIrEQDH4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:54:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vsw9km68v5"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/78ed836e-5c93-4686-bdc3-654068dadb3f.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-seW+mUJIYVWANwJhPX6oChU3EVeQb2v+/W+UIrEQDH4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/78ed836e-5c93-4686-bdc3-654068dadb3f.webp",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\78ed836e-5c93-4686-bdc3-654068dadb3f.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24452"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"seW+mUJIYVWANwJhPX6oChU3EVeQb2v+/W+UIrEQDH4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:54:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-seW+mUJIYVWANwJhPX6oChU3EVeQb2v+/W+UIrEQDH4="
         }
       ]
     },
@@ -46291,6 +47489,88 @@
       ]
     },
     {
+      "Route": "uploads/89085d19-2b07-4147-8224-748922c19a1a.cf6l0swef8.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\89085d19-2b07-4147-8224-748922c19a1a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "694447"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OHzOsXJzPcXBfV9Gw1kXLJonX3Lm3MLWKjGddci6mxQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 10:48:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cf6l0swef8"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/89085d19-2b07-4147-8224-748922c19a1a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OHzOsXJzPcXBfV9Gw1kXLJonX3Lm3MLWKjGddci6mxQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/89085d19-2b07-4147-8224-748922c19a1a.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\89085d19-2b07-4147-8224-748922c19a1a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "694447"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OHzOsXJzPcXBfV9Gw1kXLJonX3Lm3MLWKjGddci6mxQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 10:48:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OHzOsXJzPcXBfV9Gw1kXLJonX3Lm3MLWKjGddci6mxQ="
+        }
+      ]
+    },
+    {
       "Route": "uploads/8a22b0d3-bea5-4181-80c6-4fa94214935f.fbvxuwdysq.jpg",
       "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\8a22b0d3-bea5-4181-80c6-4fa94214935f.jpg",
       "Selectors": [],
@@ -46373,6 +47653,88 @@
       ]
     },
     {
+      "Route": "uploads/8b6a5c30-f2cf-40d2-af36-2beaef377899.7lldon1d9i.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\8b6a5c30-f2cf-40d2-af36-2beaef377899.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "165327"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dS3RpWDqjIi+8vESK6JpZlqoTQLqgIYWROH+qSsi6J0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 10:48:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7lldon1d9i"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/8b6a5c30-f2cf-40d2-af36-2beaef377899.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dS3RpWDqjIi+8vESK6JpZlqoTQLqgIYWROH+qSsi6J0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/8b6a5c30-f2cf-40d2-af36-2beaef377899.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\8b6a5c30-f2cf-40d2-af36-2beaef377899.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "165327"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dS3RpWDqjIi+8vESK6JpZlqoTQLqgIYWROH+qSsi6J0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 10:48:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dS3RpWDqjIi+8vESK6JpZlqoTQLqgIYWROH+qSsi6J0="
+        }
+      ]
+    },
+    {
       "Route": "uploads/8d14f8ec-f06f-403e-b18b-f0a6cf036ce5.png",
       "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\8d14f8ec-f06f-403e-b18b-f0a6cf036ce5.png",
       "Selectors": [],
@@ -46451,6 +47813,334 @@
         {
           "Name": "integrity",
           "Value": "sha256-KvXc/4DjB8Ew7witiKDAtrCb3GWDn/8RphlWk17hYn4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9e7f52c4-2cb8-4031-9d2a-694818495d64.png",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\9e7f52c4-2cb8-4031-9d2a-694818495d64.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Kfql2OKqj3paiFHz7iFJYf5PCZzoMhvEs4xk05ZVqtk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:48:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Kfql2OKqj3paiFHz7iFJYf5PCZzoMhvEs4xk05ZVqtk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9e7f52c4-2cb8-4031-9d2a-694818495d64.pw1mncetpk.png",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\9e7f52c4-2cb8-4031-9d2a-694818495d64.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Kfql2OKqj3paiFHz7iFJYf5PCZzoMhvEs4xk05ZVqtk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:48:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pw1mncetpk"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/9e7f52c4-2cb8-4031-9d2a-694818495d64.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Kfql2OKqj3paiFHz7iFJYf5PCZzoMhvEs4xk05ZVqtk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9e9b7e54-3da5-49fc-bee1-e86ca055d8c4.7gzznbohl2.png",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\9e9b7e54-3da5-49fc-bee1-e86ca055d8c4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1542381"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yR77ZESBT5nG4rE/Wcw2ZXGlXzJQlfxnI5fAn4ct9Qo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 10:51:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7gzznbohl2"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/9e9b7e54-3da5-49fc-bee1-e86ca055d8c4.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yR77ZESBT5nG4rE/Wcw2ZXGlXzJQlfxnI5fAn4ct9Qo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9e9b7e54-3da5-49fc-bee1-e86ca055d8c4.png",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\9e9b7e54-3da5-49fc-bee1-e86ca055d8c4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1542381"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yR77ZESBT5nG4rE/Wcw2ZXGlXzJQlfxnI5fAn4ct9Qo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 10:51:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yR77ZESBT5nG4rE/Wcw2ZXGlXzJQlfxnI5fAn4ct9Qo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a0a4ba60-b467-4931-bb23-8435f57b3b0b.7iketfot9o.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\a0a4ba60-b467-4931-bb23-8435f57b3b0b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "79540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sQfPqzK9Tkr9u9oCwb3vM5S6/bQzgX9l31rtH7+JHx4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 18:30:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7iketfot9o"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/a0a4ba60-b467-4931-bb23-8435f57b3b0b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sQfPqzK9Tkr9u9oCwb3vM5S6/bQzgX9l31rtH7+JHx4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a0a4ba60-b467-4931-bb23-8435f57b3b0b.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\a0a4ba60-b467-4931-bb23-8435f57b3b0b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "79540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sQfPqzK9Tkr9u9oCwb3vM5S6/bQzgX9l31rtH7+JHx4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 18:30:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sQfPqzK9Tkr9u9oCwb3vM5S6/bQzgX9l31rtH7+JHx4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a118dd54-4f92-45dc-ab8e-8925e2b25afa.8b7e9ye97k.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\a118dd54-4f92-45dc-ab8e-8925e2b25afa.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "174838"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fFL7Do41MkrfTi0CDs/daos6BccnYchD+T7MEqPy4jQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 18:30:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8b7e9ye97k"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/a118dd54-4f92-45dc-ab8e-8925e2b25afa.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fFL7Do41MkrfTi0CDs/daos6BccnYchD+T7MEqPy4jQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a118dd54-4f92-45dc-ab8e-8925e2b25afa.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\a118dd54-4f92-45dc-ab8e-8925e2b25afa.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "174838"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fFL7Do41MkrfTi0CDs/daos6BccnYchD+T7MEqPy4jQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 18:30:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fFL7Do41MkrfTi0CDs/daos6BccnYchD+T7MEqPy4jQ="
         }
       ]
     },
@@ -46779,6 +48469,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-kXUTPF3zWpVHRqf/Q72GLyl56xTmwANzT5QcligMJVU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/cb547cf7-4786-4f0b-a8ab-cdbb4c924304.avif",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\cb547cf7-4786-4f0b-a8ab-cdbb4c924304.avif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9335"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2WW6V34XepJHtbEnLcTChBw8Nktt+ksR1HGzdknPod0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:48:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2WW6V34XepJHtbEnLcTChBw8Nktt+ksR1HGzdknPod0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/cb547cf7-4786-4f0b-a8ab-cdbb4c924304.hicmpp4eki.avif",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\cb547cf7-4786-4f0b-a8ab-cdbb4c924304.avif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9335"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2WW6V34XepJHtbEnLcTChBw8Nktt+ksR1HGzdknPod0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:48:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hicmpp4eki"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/cb547cf7-4786-4f0b-a8ab-cdbb4c924304.avif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2WW6V34XepJHtbEnLcTChBw8Nktt+ksR1HGzdknPod0="
         }
       ]
     },
@@ -47189,6 +48961,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-y8rZhNDj8dxdhAuNU+AJO+AYKp3Sh8zF62k1EcdM0Ws="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f55bd638-0f22-4184-8cbe-1c0b4048a1f0.gd2411lbw2.webp",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\f55bd638-0f22-4184-8cbe-1c0b4048a1f0.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29624"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/MVnTcX3icSdOpVeG18BkLLDa1U0cXSSupPOT4k3jw8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:50:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gd2411lbw2"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/f55bd638-0f22-4184-8cbe-1c0b4048a1f0.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/MVnTcX3icSdOpVeG18BkLLDa1U0cXSSupPOT4k3jw8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f55bd638-0f22-4184-8cbe-1c0b4048a1f0.webp",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\ShoeStore\\ShoeStore\\wwwroot\\uploads\\f55bd638-0f22-4184-8cbe-1c0b4048a1f0.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29624"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/MVnTcX3icSdOpVeG18BkLLDa1U0cXSSupPOT4k3jw8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:50:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/MVnTcX3icSdOpVeG18BkLLDa1U0cXSSupPOT4k3jw8="
         }
       ]
     }

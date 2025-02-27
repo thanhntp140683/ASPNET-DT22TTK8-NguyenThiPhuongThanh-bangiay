@@ -104,7 +104,7 @@
 							@if (Context.Session.GetString("FullName") != null)
 							{
 								<li class="nav-item submenu dropdown">
-									<p class="nav-link" data-toggle="dropdown" role="button">Xin chào, @Context.Session.GetString("FullName")</p>
+									<a class="nav-link" data-toggle="dropdown" role="button">Xinc hào, @Context.Session.GetString("FullName")</a>
 									<ul class="dropdown-menu">
 										<li><a class="dropdown-item" asp-action="Logout" asp-controller="Login">Đăng xuất tài khoản</a></li>
 										@if (Context.Session.GetString("Role") == "Admin")

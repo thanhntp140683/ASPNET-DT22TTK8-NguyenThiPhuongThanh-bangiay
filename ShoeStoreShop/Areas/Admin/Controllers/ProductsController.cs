@@ -21,6 +21,12 @@ namespace ShoeStore.Areas.Admin.Controllers
         [Route("Admin/Products")]
         public IActionResult Index()
         {
+            var role = HttpContext.Session.GetString("UserRole");
+
+            if (role != "Admin")
+            {
+                return RedirectToAction("Index", "Login");
+            }
             var shoes = _context.Shoes
                 .Include(s => s.Category)
                 .Include(s => s.Brand)
@@ -31,6 +37,12 @@ namespace ShoeStore.Areas.Admin.Controllers
         [HttpGet("Admin/Products/Create")]
         public IActionResult Create()
         {
+            var role = HttpContext.Session.GetString("UserRole");
+
+            if (role != "Admin")
+            {
+                return RedirectToAction("Index", "Login");
+            }
             ViewBag.Category = new SelectList(_context.Categories, "Id", "Name");
             ViewBag.Brands = new SelectList(_context.Brands, "Id", "Name");
             ViewBag.Colors = new SelectList(_context.Colors, "Id", "Name");
@@ -39,6 +51,12 @@ namespace ShoeStore.Areas.Admin.Controllers
         [HttpGet("Admin/Products/Custom")]
         public IActionResult Custom()
         {
+            var role = HttpContext.Session.GetString("UserRole");
+
+            if (role != "Admin")
+            {
+                return RedirectToAction("Index", "Login");
+            }
             var categories = _context.Categories.ToList();
             var brands = _context.Brands.ToList();
             var colors = _context.Colors.ToList();
@@ -52,6 +70,13 @@ namespace ShoeStore.Areas.Admin.Controllers
         [HttpGet("Admin/Products/Edit/{id}")]
         public IActionResult Edit(int id)
         {
+            var role = HttpContext.Session.GetString("UserRole");
+
+            if (role != "Admin")
+            {
+                return RedirectToAction("Index", "Login");
+            }
+
             try
             {
                 var shoe = _context.Shoes
@@ -80,6 +105,12 @@ namespace ShoeStore.Areas.Admin.Controllers
         [HttpPost("Admin/Products/Create")]
         public async Task<IActionResult> Create(Shoe shoe, List<IFormFile> images)
         {
+            var role = HttpContext.Session.GetString("UserRole");
+
+            if (role != "Admin")
+            {
+                return RedirectToAction("Index", "Login");
+            }
             ViewBag.Category = new SelectList(_context.Categories, "Id", "Name");
             ViewBag.Brands = new SelectList(_context.Brands, "Id", "Name");
             ViewBag.Colors = new SelectList(_context.Colors, "Id", "Name");
@@ -117,6 +148,12 @@ namespace ShoeStore.Areas.Admin.Controllers
         [HttpPost("Admin/Products/Edit/{id}")]
         public async Task<IActionResult> Edit(int id, Shoe shoe, List<IFormFile> images)
         {
+            var role = HttpContext.Session.GetString("UserRole");
+
+            if (role != "Admin")
+            {
+                return RedirectToAction("Index", "Login");
+            }
             var existingShoe = _context.Shoes
                 .Include(s => s.ShoeImages)
                 .FirstOrDefault(s => s.Id == id);
@@ -134,10 +171,10 @@ namespace ShoeStore.Areas.Admin.Controllers
             existingShoe.Gender = shoe.Gender;
             existingShoe.Updated_At = DateTime.Now;
 
-            // XÓA HÌNH ẢNH CŨ
-            if (shoe.ShoeImages.Any())
+            // **Chỉ xóa ảnh cũ nếu có ảnh mới được tải lên**
+            if (images != null && images.Count > 0)
             {
-                foreach (var oldImage in shoe.ShoeImages)
+                foreach (var oldImage in existingShoe.ShoeImages)
                 {
                     string oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, "uploads", oldImage.Image_Url);
                     if (System.IO.File.Exists(oldImagePath))
@@ -145,16 +182,9 @@ namespace ShoeStore.Areas.Admin.Controllers
                         System.IO.File.Delete(oldImagePath);
                     }
                 }
-                _context.ShoeImages.RemoveRange(shoe.ShoeImages);
-            }
+                _context.ShoeImages.RemoveRange(existingShoe.ShoeImages);
 
-            var oldImages = _context.ShoeImages.Where(img => img.Shoe_Id == id).ToList();
-            _context.ShoeImages.RemoveRange(oldImages);
-            await _context.SaveChangesAsync(); // Lưu lại để tránh lỗi khóa ngoại
-
-            // THÊM HÌNH ẢNH MỚI
-            if (images != null && images.Count > 0)
-            {
+                // **Thêm ảnh mới**
                 foreach (var image in images)
                 {
                     var fileName = Guid.NewGuid().ToString() + Path.GetExtension(image.FileName);
@@ -179,9 +209,16 @@ namespace ShoeStore.Areas.Admin.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
         }
+
         [HttpPost("Admin/Products/CustomProduct")]
         public IActionResult CreateCustom(string select, string name)
         {
+            var role = HttpContext.Session.GetString("UserRole");
+
+            if (role != "Admin")
+            {
+                return RedirectToAction("Index", "Login");
+            }
             if (string.IsNullOrWhiteSpace(name))
             {
                 TempData["Error"] = "Tên không được để trống!";
@@ -223,6 +260,12 @@ namespace ShoeStore.Areas.Admin.Controllers
         [ActionName("EditCategory")]
         public IActionResult EditCategory(Category category, string Name)
         {
+            var role = HttpContext.Session.GetString("UserRole");
+
+            if (role != "Admin")
+            {
+                return RedirectToAction("Index", "Login");
+            }
             if (Name == null)
             {
                 TempData["Error"] = "Không được để trống";
@@ -244,6 +287,12 @@ namespace ShoeStore.Areas.Admin.Controllers
         [ActionName("EditBrand")]
         public IActionResult EditBrand(Brand brand, string Name)
         {
+            var role = HttpContext.Session.GetString("UserRole");
+
+            if (role != "Admin")
+            {
+                return RedirectToAction("Index", "Login");
+            }
             if (Name == null)
             {
                 TempData["Error"] = "Không được để trống";
@@ -266,7 +315,13 @@ namespace ShoeStore.Areas.Admin.Controllers
         [ActionName("EditColor")]
         public IActionResult EditColor(Color color, string Name)
         {
-            if(Name == null)
+            var role = HttpContext.Session.GetString("UserRole");
+
+            if (role != "Admin")
+            {
+                return RedirectToAction("Index", "Login");
+            }
+            if (Name == null)
             {
                 TempData["Error"] = "Không được để trống";
                 return RedirectToAction("Index");
@@ -285,6 +340,12 @@ namespace ShoeStore.Areas.Admin.Controllers
         [HttpGet("Admin/Products/Delete/{id}")]
         public IActionResult Delete(int id)
         {
+            var role = HttpContext.Session.GetString("UserRole");
+
+            if (role != "Admin")
+            {
+                return RedirectToAction("Index", "Login");
+            }
             var shoe = _context.Shoes.Find(id);
             if (shoe == null)
             {

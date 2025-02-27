@@ -1,46 +1,70 @@
-﻿<div class="container tm-mt-big tm-mb-big">
-    <div class="row">
-        <div class="col-12 mx-auto tm-login-col">
-            <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h2 class="tm-block-title mb-4">Welcome to Dashboard, Login</h2>
+﻿@{
+    Layout = "";
+}
+
+
+<!-- Section: Design Block -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập Shoe Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    .cascading-right {
+        margin-right: -50px;
+    }
+
+</style>
+<body>
+    <!-- Section: Design Block -->
+    <section class="text-center text-lg-start">
+
+
+        <!-- Jumbotron -->
+        <div class="container py-4">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="card cascading-right bg-body-tertiary" style="
+            backdrop-filter: blur(30px);
+            ">
+                        <div class="card-body p-5 shadow-5 text-center">
+                            <h2 class="fw-bold mb-5">Đăng nhập</h2>
+                            <form method="post" asp-action="LoginAdmin" asp-controller="Login">
+                                <!-- Email input -->
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="text" name="username" id="form3Example3" class="form-control" />
+                                    <label class="form-label" for="form3Example3">Tài khoản</label>
+                                </div>
+
+                                <!-- Password input -->
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="password" name="password" id="form3Example4" class="form-control" />
+                                    <label class="form-label" for="form3Example4">Mật khẩu</label>
+                                </div>
+
+
+                                <!-- Submit button -->
+                                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">
+                                    Đăng nhập
+                                </button>
+
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <div class="row mt-2">
-                    <div class="col-12">
-                        <form action="index.html" method="post" class="tm-login-form">
-                            <div class="form-group">
-                                <label for="username">Username</label>
-                                <input name="username"
-                                       type="text"
-                                       class="form-control validate"
-                                       id="username"
-                                       value=""
-                                       required />
-                            </div>
-                            <div class="form-group mt-3">
-                                <label for="password">Password</label>
-                                <input name="password"
-                                       type="password"
-                                       class="form-control validate"
-                                       id="password"
-                                       value=""
-                                       required />
-                            </div>
-                            <div class="form-group mt-4">
-                                <button type="submit"
-                                        class="btn btn-primary btn-block text-uppercase">
-                                    Login
-                                </button>
-                            </div>
-                            <button class="mt-5 btn btn-primary btn-block text-uppercase">
-                                Forgot your password?
-                            </button>
-                        </form>
-                    </div>
+
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <img src="~/img/banner/banner-img.png" class="w-100 rounded-4 shadow-4"
+                         alt="" />
                 </div>
             </div>
         </div>
-    </div>
-</div>
+        <!-- Jumbotron -->
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

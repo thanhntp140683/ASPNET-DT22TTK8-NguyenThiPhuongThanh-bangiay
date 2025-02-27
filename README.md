@@ -100,3 +100,22 @@ Run file: `SSMS-Setup-ENU.exe` và làm theo cài đặt.
 Vậy là bạn đã cài đặt thành công SQL Server Management Studio rồi.
 
 ---
+## 📦 **Nguồn tài liệu tham khảo, thực hành và sửa lỗi**
+
+📺 [Video hướng dẫn thực hành và tham khảokhảo](https://www.youtube.com/playlist?list=PLWTu87GngvNzYGOXJnXQwlkdhV6_RWs1b)
+
+📜 [stackoverflow](https://stackoverflow.com/)
+
+📜 [w3schools](https://www.w3schools.com/cs/index.php)
+
+## 📦 **Tích hợp thanh toán VNPay**
+
+📜 [Tài liệu hướng dẫn tích hợp thanh toán VNPay](https://sandbox.vnpayment.vn/apis/docs/thanh-toan-pay/pay.html)
+
+📜 [Tài khoản test thanh toán VNPay](https://sandbox.vnpayment.vn/apis/vnpay-demo/)
+
+## 📦 **Tích hợp thanh toán Momo**
+
+📜 [Tài liệu hướng dẫn tích hợp thanh toán Momo](https://developers.momo.vn/v3/vi/docs/payment/api/wallet/onetime)
+
+📜 [Tài khoản test thanh toán Momo](https://developers.momo.vn/v3/vi/docs/payment/onboarding/test-instructions)

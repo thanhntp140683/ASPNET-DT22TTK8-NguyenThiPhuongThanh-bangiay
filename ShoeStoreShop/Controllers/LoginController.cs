@@ -3,15 +3,18 @@ using Microsoft.EntityFrameworkCore;
 using ShoeStore.Data;
 using BCrypt.Net;
 using ShoeStore.Models;
+using ShoeStore.Services;
 
 namespace ShoeStore.Controllers
 {
     public class LoginController : Controller
     {
         private readonly ApplicationDbContext _context;
-        public LoginController(ApplicationDbContext context)
+        private readonly EmailService _emailService;
+        public LoginController(ApplicationDbContext context, EmailService emailService)
         {
             _context = context;
+            _emailService = emailService;
         }
         public IActionResult Index()
         {
@@ -101,65 +104,6 @@ namespace ShoeStore.Controllers
 
             return RedirectToAction("Index");
         }
-        [HttpPost]
-        public async Task<IActionResult> ForgotPassword(string email)
-        {
-            //var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
-
-            //if (user == null)
-            //{
-            //    return Json(new { success = false, message = "Email không tồn tại!" });
-            //}
-
-            //user.ResetPasswordToken = Guid.NewGuid().ToString();
-            //user.ResetTokenExpires = DateTime.Now.AddHours(1);
-            //await _context.SaveChangesAsync();
-
-            //string resetLink = Url.Action("ResetPassword", "Account", new { token = user.ResetPasswordToken }, Request.Scheme);
-
-            //await _emailService.SendEmailAsync(user.Email, "Đặt lại mật khẩu", $"Click vào link để đặt lại mật khẩu: {resetLink}");
-
-            return Json(new { success = true, message = "Hãy kiểm tra email của bạn để đặt lại mật khẩu." });
-        }
-        [HttpGet]
-        public async Task<IActionResult> ResetPassword(string token)
-        {
-            //var user = await _context.Users.FirstOrDefaultAsync(u => u.ResetPasswordToken == token && u.ResetTokenExpires > DateTime.Now);
-
-            //if (user == null)
-            //{
-            //    return View("Error");
-            //}
-
-            return View(new ResetPasswordViewModel { Token = token });
-        }
-        [HttpPost]
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model)
-        {
-            //if (ModelState.IsValid)
-            //{
-            //    var user = await _context.Users
-            //        .FirstOrDefaultAsync(u => u.ResetPasswordToken == model.Token);
-
-            //    if (user != null)
-            //    {
-            //        user.Password = BCrypt.Net.BCrypt.HashPassword(model.Password);
-            //        user.ResetPasswordToken = null;
-            //        await _context.SaveChangesAsync();
-
-            //        return RedirectToAction("Login", "Account");
-            //    }
-            //    else
-            //    {
-            //        ModelState.AddModelError(string.Empty, "Token không hợp lệ hoặc đã hết hạn.");
-            //    }
-            //}
-
-            return View(model);
-        }
-
 
         [HttpGet]
         [Route("/Logout")]
@@ -168,5 +112,103 @@ namespace ShoeStore.Controllers
             HttpContext.Session.Clear();
             return RedirectToAction( "Index", "Login");
         }
+        [HttpGet]
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> ForgotPassword(string email)
+            
+        {
+            Console.WriteLine("Email: " + email);
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+            if (user == null)
+            {
+                TempData["Error"] = "Email không tồn tại!";
+                return RedirectToAction("ForgotPassword");
+            }
+
+            var otp = new Random().Next(100000, 999999).ToString();
+            Console.WriteLine("OTP: " + otp);
+            user.ResetPasswordToken = otp;
+            user.ResetTokenExpires = DateTime.UtcNow.AddMinutes(10);
+
+            await _context.SaveChangesAsync();
+
+            await _emailService.SendEmailAsync(email, "Mã xác nhận", $"Mã OTP của bạn: {otp}");
+
+            TempData["Success"] = "OTP đã được gửi!";
+            return RedirectToAction("VerifyOTP", new { email });
+        }
+        [HttpGet("VerifyOTP")]
+        public IActionResult VerifyOTP(string email)
+        {
+            if (string.IsNullOrEmpty(email))
+            {
+                return RedirectToAction("ForgotPassword");
+            }
+
+            ViewBag.Email = email;
+            return View();
+        }
+        [HttpPost("VerifyOTP")]
+        public async Task<IActionResult> VerifyOTP(string email, string otp)
+        {
+            Console.WriteLine("Email: " + email);
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+            if (user == null)
+            {
+                TempData["Error"] = "Email không tồn tại!";
+                return RedirectToAction("ForgotPassword");
+            }
+
+            if (user.ResetPasswordToken != otp || user.ResetTokenExpires < DateTime.UtcNow)
+            {
+                TempData["Error"] = "Mã OTP không hợp lệ hoặc đã hết hạn!";
+                return RedirectToAction("VerifyOTP", new { email });
+            }
+
+            TempData["Success"] = "OTP hợp lệ, vui lòng nhập mật khẩu mới.";
+            return RedirectToAction("ResetPassword", new { email, otp });
+        }
+        [HttpGet]
+        public IActionResult ResetPassword(string email, string otp)
+        {
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(otp))
+            {
+                return RedirectToAction("ForgotPassword");
+            }
+            ViewBag.Email = email;
+            ViewBag.OTP = otp;
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(string email, string otp, string newPassword)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+            if (user == null)
+            {
+                TempData["Error"] = "Email không tồn tại!";
+                return RedirectToAction("ForgotPassword");
+            }
+
+            if (user.ResetPasswordToken != otp || user.ResetTokenExpires < DateTime.UtcNow)
+            {
+                TempData["Error"] = "Mã OTP không hợp lệ hoặc đã hết hạn!";
+                return RedirectToAction("VerifyOTP", new { email });
+            }
+
+            // Mã hóa mật khẩu mới
+            user.Password = BCrypt.Net.BCrypt.HashPassword(newPassword);
+            user.ResetPasswordToken = null;
+            user.ResetTokenExpires = null;
+
+            await _context.SaveChangesAsync();
+
+            TempData["Success"] = "Mật khẩu đã được cập nhật!";
+            return RedirectToAction("Login");
+        }
+
     }
 }

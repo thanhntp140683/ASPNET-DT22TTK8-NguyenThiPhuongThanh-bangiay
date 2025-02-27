@@ -1,0 +1,75 @@
+﻿@model User
+
+@{
+    ViewData["Title"] = "Chỉnh Sửa Người Dùng";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white text-center">
+                    <h4>Chỉnh Sửa Người Dùng</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit" method="post">
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="row">
+                            <!-- Username -->
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Tên Đăng Nhập</label>
+                                <input class="form-control" asp-for="Username" readonly />
+                            </div>
+
+                            <!-- Full Name -->
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Họ & Tên</label>
+                                <input class="form-control" asp-for="FullName" required />
+                            </div>
+
+                            <!-- Email -->
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Email</label>
+                                <input class="form-control" asp-for="Email" type="email" readonly />
+                            </div>
+
+                            <!-- Phone Number -->
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Số Điện Thoại</label>
+                                <input class="form-control" asp-for="PhoneNumber" />
+                            </div>
+
+                            <!-- Role -->
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Quyền</label>
+                                <select class="form-select" asp-for="Role">
+                                    <option value="User">User</option>
+                                    <option value="Admin">Admin</option>
+                                </select>
+                            </div>
+
+                            <!-- Status -->
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Trạng Thái</label>
+                                <select class="form-select" asp-for="Status">
+                                    <option value="Active">Hoạt động</option>
+                                    <option value="Inactive">Bị khóa</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-3">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-save"></i> Lưu
+                            </button>
+                            <a asp-action="Index" class="btn btn-secondary">
+                                <i class="bi bi-arrow-left"></i> Quay lại
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

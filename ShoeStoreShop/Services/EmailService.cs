@@ -7,8 +7,8 @@ namespace ShoeStore.Services
     {
         private readonly string _smtpServer = "smtp.gmail.com";
         private readonly int _smtpPort = 587; 
-        private readonly string _fromEmail = "lethang01674187728@gmail.com";
-        private readonly string _fromPassword = "jbas klkx eyoc wkyx";
+        private readonly string _fromEmail = "info.aspnetcore@gmail.com";
+        private readonly string _fromPassword = "cyjz egbt tvpu jzyd";
 
         public async Task SendEmailAsync(string toEmail, string subject, string body)
         {

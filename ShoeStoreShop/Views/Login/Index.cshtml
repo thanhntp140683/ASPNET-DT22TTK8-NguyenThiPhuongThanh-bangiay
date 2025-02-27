@@ -23,7 +23,7 @@
 					<div class="hover">
 						<h4>Giày đẹp, phong cách chất – Đăng nhập ngay!</h4>
 						<p>Mỗi bước đi là một câu chuyện – Hãy bắt đầu từ đây!</p>
-						<a class="primary-btn" asp-action="Register" >Tạo tài khoản</a>
+						<a class="primary-btn" asp-action="Register" asp-controller="Login">Tạo tài khoản</a>
 					</div>
 				</div>
 			</div>
@@ -45,7 +45,7 @@
 						</div>
 						<div class="col-md-12 form-group">
 							<button type="submit" value="submit" class="primary-btn">Đăng nhập</button>
-							<a href="#">Quên mật khẩu?</a>
+							<a asp-controller="Login" asp-action="ForgotPassword">Quên mật khẩu?</a>
 						</div>
 					</form>
 				</div>

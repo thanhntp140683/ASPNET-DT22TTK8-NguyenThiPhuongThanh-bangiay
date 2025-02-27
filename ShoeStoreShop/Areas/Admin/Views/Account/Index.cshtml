@@ -1,76 +1,62 @@
-﻿<div class="container mt-5">
-    <!-- row -->
-    <div class="row tm-content-row">
-        <div class="tm-block-col tm-col-avatar">
-            <div class="tm-bg-primary-dark tm-block tm-block-avatar">
-                <h2 class="tm-block-title">Change Avatar</h2>
-                <div class="tm-avatar-container">
-                    <img src="img/avatar.png"
-                         alt="Avatar"
-                         class="tm-avatar img-fluid mb-4" />
-                    <a href="#" class="tm-avatar-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                    </a>
-                </div>
-                <button class="btn btn-primary btn-block text-uppercase">
-                    Upload New Photo
-                </button>
-            </div>
-        </div>
-        <div class="tm-block-col tm-col-account-settings">
-            <div class="tm-bg-primary-dark tm-block tm-block-settings">
-                <h2 class="tm-block-title">Account Settings</h2>
-                <form action="" class="tm-signup-form row">
-                    <div class="form-group col-lg-6">
-                        <label for="name">Account Name</label>
-                        <input id="name"
-                               name="name"
-                               type="text"
-                               class="form-control validate" />
-                    </div>
-                    <div class="form-group col-lg-6">
-                        <label for="email">Account Email</label>
-                        <input id="email"
-                               name="email"
-                               type="email"
-                               class="form-control validate" />
-                    </div>
-                    <div class="form-group col-lg-6">
-                        <label for="password">Password</label>
-                        <input id="password"
-                               name="password"
-                               type="password"
-                               class="form-control validate" />
-                    </div>
-                    <div class="form-group col-lg-6">
-                        <label for="password2">Re-enter Password</label>
-                        <input id="password2"
-                               name="password2"
-                               type="password"
-                               class="form-control validate" />
-                    </div>
-                    <div class="form-group col-lg-6">
-                        <label for="phone">Phone</label>
-                        <input id="phone"
-                               name="phone"
-                               type="tel"
-                               class="form-control validate" />
-                    </div>
-                    <div class="form-group col-lg-6">
-                        <label class="tm-hide-sm">&nbsp;</label>
-                        <button type="submit"
-                                class="btn btn-primary btn-block text-uppercase">
-                            Update Your Profile
-                        </button>
-                    </div>
-                    <div class="col-12">
-                        <button type="submit"
-                                class="btn btn-primary btn-block text-uppercase">
-                            Delete Your Account
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
+﻿@model List<ShoeStore.Models.UserViewModel>
+
+@{
+    ViewData["Title"] = "Danh Sách Người Dùng";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center text-primary">Danh Sách Người Dùng</h2>
+
+    <div class="table-responsive mt-3">
+		<a asp-action="Create" class="btn btn-primary mb-3">
+			<i class="fas fa-plus"></i> Thêm mới tài khoản </a>
+        <table class="table table-hover table-bordered align-middle">
+            <thead class="table-dark text-black text-center">
+                <tr>
+                    <th>#</th>
+                    <th>Tên Đăng Nhập</th>
+                    <th>Họ & Tên</th>
+                    <th>Email</th>
+                    <th>Số Điện Thoại</th>
+                    <th>Quyền</th>
+                    <th>Trạng Thái</th>
+                    <th>Ngày Tạo</th>
+                    <th>Hành Động</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td class="text-center">@user.Id</td>
+                        <td>@user.UserName</td>
+                        <td>@user.FullName</td>
+                        <td>@user.Email</td>
+                        <td>@user.PhoneNumber</td>
+                        <td>@user.Role</td>
+                        <td class="text-center">
+                            @if (user.Status == "Active")
+                            {
+                                <span class="badge bg-success px-3 py-2">Hoạt động</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger px-3 py-2">Bị khóa</span>
+                            }
+                        </td>
+                        <td class="text-center">@user.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td class="text-center">
+                            <a asp-action="Edit" asp-route-id="@user.Id" class="btn btn-warning btn-sm me-1 mb-3">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@user.Id" class="btn btn-danger btn-sm"
+                               onclick="return confirm('Bạn có chắc chắn muốn xóa?');">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     </div>
 </div>

@@ -46,12 +46,12 @@
 			<div class="col-lg-5 offset-lg-1">
 				<div class="s_product_text">
 					<h3>@Model.Name</h3>
-					<h2>@Model.Price VNĐ</h2>
+					<h2>@Model.Price.ToString("N0") VNĐ</h2>
 					<ul class="list">
 						<li><a class="active" href="#"><span>Thương hiệu</span> : @(brand?.FirstOrDefault(b => b.Id == Model.Brand_Id)?.Name)</a></li>
 						<li><a class="active" href="#"><span>Danh mục</span> : @(category?.FirstOrDefault(c => c.Id == Model.Category_Id)?.Name)</a></li>
 					</ul>
-					<p>@Html.Raw(@Model.Description)</p>
+					
 					<form method="post" asp-controller="Cart" asp-action="AddToCart">
 						<input type="hidden" name="id" value="@Model.Id">
 						<input type="hidden" name="name" value="@Model.Name">
@@ -71,6 +71,7 @@
 
 						<button type="submit" class="primary-btn">Thêm giỏ hàng</button>
 					</form>
+					<p>@Html.Raw(@Model.Description)</p>
 				</div>
 			</div>
 

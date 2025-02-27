@@ -1,0 +1,73 @@
+﻿@model ShoeStore.Models.User
+
+@{
+    ViewBag.Title = "Tạo Tài Khoản Người Dùng";
+}
+<style>
+    .form-control {
+		padding: 0px !important;
+    }
+</style>
+<div class="container" style="max-width: 1200px; margin: 0 auto">
+    <h2 class="text-center text-white">Tạo Tài Khoản Người Dùng</h2>
+
+    @using (Html.BeginForm("Create", "Account", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="row">
+            <!-- Cột 1 -->
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Username, "Tên Người Dùng")
+                    @Html.TextBoxFor(model => model.Username, new { @class = "form-control", placeholder = "Nhập tên người dùng" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Email, "Email")
+                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control", placeholder = "Nhập email" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.FullName, "Họ và Tên")
+                    @Html.TextBoxFor(model => model.FullName, new { @class = "form-control", placeholder = "Nhập họ và tên" })
+                </div>
+            </div>
+
+            <!-- Cột 2 -->
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Password, "Mật khẩu")
+                    @Html.PasswordFor(model => model.Password, new { @class = "form-control", placeholder = "Nhập mật khẩu" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.PhoneNumber, "Số Điện Thoại")
+                    @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control", placeholder = "Nhập số điện thoại" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Role, "Vai Trò")
+                    @Html.DropDownListFor(model => model.Role, new List<SelectListItem>
+                {
+                new SelectListItem { Text = "Admin", Value = "Admin" },
+                new SelectListItem { Text = "User", Value = "User" }
+                }, "Chọn vai trò", new { @class = "form-control" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Status, "Trạng Thái")
+                    @Html.DropDownListFor(model => model.Status, new List<SelectListItem>
+                {
+                new SelectListItem { Text = "Hoạt động", Value = "Active" },
+                new SelectListItem { Text = "Ẩn", Value = "Inactive" }
+                }, "Chọn trạng thái", new { @class = "form-control" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group text-center">
+            <button type="submit" class="btn btn-success">Tạo Tài Khoản</button>
+        </div>
+    }
+</div>

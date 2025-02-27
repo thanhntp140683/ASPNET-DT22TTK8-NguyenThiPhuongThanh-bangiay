@@ -19,7 +19,13 @@ namespace ShoeStore.Controllers
         public IActionResult Index()
         {
             var categories = _context.Categories.ToList();
-            var products = _context.Shoes.Include(p => p.Category).ToList();
+            var products = _context.Shoes
+                .Include(p => p.Category)
+                .Include(s => s.Brand)
+                .Include(s => s.Color)
+                .Include(s => s.ShoeImages)
+                .OrderBy(x => Guid.NewGuid())
+                .ToList();
             var brands = _context.Brands.ToList();
             ViewBag.Categories = categories;
             ViewBag.Products = products;

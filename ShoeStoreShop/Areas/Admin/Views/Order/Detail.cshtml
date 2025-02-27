@@ -1,7 +1,7 @@
 ﻿@model ShoeStore.Models.Order
 
-<div class="container mt-4">
-    <h2>Chi tiết đơn hàng</h2>
+<div class="container mt-4 text-white">
+    <h2 class="text-center">Chi tiết đơn hàng</h2>
     <hr />
 
     <h4>Thông tin đơn hàng</h4>
@@ -11,7 +11,8 @@
     <p><strong>Số điện thoại:</strong> @Model.Phone</p>
     <p><strong>Phương thức thanh toán:</strong> @Model.PaymentMethod</p>
     <p>
-        <strong>Trạng thái thanh toán:</strong>   @if (Model.PaymentStatus == "Success")
+        <strong>Trạng thái thanh toán:</strong>
+        @if (Model.PaymentStatus == "Success")
         {
             <span class="badge bg-success">Thành công</span>
         }
@@ -26,7 +27,7 @@
     <h4>Danh sách sản phẩm</h4>
     @if (Model.OrderDetails != null && Model.OrderDetails.Any())
     {
-        <table class="table table-bordered">
+        <table class="table table-bordered table-dark">
             <thead>
                 <tr>
                     <th>#</th>
@@ -57,3 +58,39 @@
 
     <a href="@Url.Action("Index", "Order", new { area = "Admin" })" class="btn btn-secondary mt-3">Quay lại</a>
 </div>
+
+<style>
+    body {
+        background-color: #343a40; /* Màu nền tối */
+    }
+
+    .container {
+        color: #fff; /* Màu chữ trắng */
+    }
+
+    h2, h4 {
+        color: #fff; /* Màu tiêu đề trắng */
+    }
+
+    .table-dark {
+        background-color: #212529 !important;
+        color: #fff;
+    }
+
+    .badge.bg-success {
+        background-color: #28a745; /* Thành công màu xanh lá */
+    }
+
+    .badge.bg-danger {
+        background-color: #dc3545; /* Thất bại màu đỏ */
+    }
+
+    .btn-secondary {
+        background-color: #6c757d; /* Màu nút quay lại */
+        color: white;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268; /* Màu khi hover */
+        }
+</style>

@@ -56,15 +56,27 @@
                                     </select>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="form-group">
+									<label for="amount">Số lượng</label>
+									<input asp-for="Amount" type="text" class="form-control validate" />
+                                </div>
+                            </div>
 
                         </div>
 
                         <!-- Cột phải -->
                         <div class="col-md-6">
                             <div class="form-group mb-3">
-                                <label for="description">Mô tả</label>
-                                <textarea asp-for="Description" class="form-control validate tm-small" rows="5"></textarea>
+                                <label class="form-label fw-bold">Mô tả</label>
+                                <textarea asp-for="Description" class="form-control" id="editor"></textarea>
+                                <span asp-validation-for="Description" class="text-danger"></span>
                             </div>
+
+                            <script>
+                                CKEDITOR.replace('editor');
+                            </script>
+
 
                             <div class="form-group mb-3">
                                 <label>Trạng thái</label>

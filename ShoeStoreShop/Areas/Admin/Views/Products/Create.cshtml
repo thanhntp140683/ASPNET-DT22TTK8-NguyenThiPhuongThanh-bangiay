@@ -23,8 +23,18 @@
                             </div>
                             <div class="form-group mb-3">
                                 <label for="Description">Mô tả</label>
-                                <textarea id="Description" asp-for="Description" class="form-control validate" rows="3" required></textarea>
+                                <div class="mb-3">
+                                    <textarea asp-for="Description" class="form-control" id="editor"></textarea>
+                                    <span asp-validation-for="Description" class="text-danger"></span>
+                                </div>
+
+                                <script>
+                                    CKEDITOR.replace('editor');
+                                </script>
                             </div>
+                            
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
                             <div class="form-group mb-3">
                                 <label for="CategoryId">Danh mục</label>
                                 <select id="CategoryId" class="custom-select tm-select-accounts" asp-for="Category_Id" asp-items="ViewBag.Category">
@@ -37,13 +47,7 @@
                                     <option selected>Chọn thương hiệu</option>
                                 </select>
                             </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
                         <div class="row">
-                            <div class="form-group mb-3 col-xs-12 col-sm-6">
-                                <label for="Size">Size</label>
-                                <input id="Size" type="text" class="form-control validate" />
-                            </div>
 
                             <div class="form-group mb-3 col-xs-12 col-sm-6">
                                 <label for="ColorId">Màu</label>
@@ -51,6 +55,11 @@
                                     <option selected>Chọn màu</option>
                                 </select>
                             </div>
+                                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                                    <label for="Amount">Số lượng</label>
+                                    <input type="number" id="Amount" class="form-control validate" asp-for="Amount">
+                                       
+                                </div>
                         </div>
                         <div class="row">
                             <div class="form-group mb-3 col-xs-12 col-sm-6">

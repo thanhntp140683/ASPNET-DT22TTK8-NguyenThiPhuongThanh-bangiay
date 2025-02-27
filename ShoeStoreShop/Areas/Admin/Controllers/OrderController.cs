@@ -17,13 +17,24 @@ namespace ShoeStore.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            var role = HttpContext.Session.GetString("UserRole");
+
+            if (role != "Admin")
+            {
+                return RedirectToAction("Index", "Login");
+            }
             var orders = _dbContext.Orders.ToList();
             return View(orders);
         }
         [HttpGet("Detail")]
         public async Task<IActionResult> Detail(string orderId)
         {
+            var role = HttpContext.Session.GetString("UserRole");
 
+            if (role != "Admin")
+            {
+                return RedirectToAction("Index", "Login");
+            }
             if (string.IsNullOrEmpty(orderId))
             {
                 return BadRequest("Mã đơn hàng không hợp lệ.");
@@ -45,6 +56,12 @@ namespace ShoeStore.Areas.Admin.Controllers
         [HttpPost("UpdateStatus")]
         public IActionResult UpdateStatus(int id, string status)
         {
+            var role = HttpContext.Session.GetString("UserRole");
+
+            if (role != "Admin")
+            {
+                return RedirectToAction("Index", "Login");
+            }
             var order = _dbContext.Orders.Find(id);
             if (order == null)
             {
@@ -61,6 +78,12 @@ namespace ShoeStore.Areas.Admin.Controllers
         [HttpPost("Delete")]
         public IActionResult Delete(int id)
         {
+            var role = HttpContext.Session.GetString("UserRole");
+
+            if (role != "Admin")
+            {
+                return RedirectToAction("Index", "Login");
+            }
             var order = _dbContext.Orders.Find(id);
 
             _dbContext.Orders.Remove(order);

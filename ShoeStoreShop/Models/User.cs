@@ -33,5 +33,8 @@ namespace ShoeStore.Models
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime? UpdatedAt { get; set; }
+
+        public string? ResetPasswordToken { get; set; }
+        public DateTime? ResetTokenExpires { get; set; }
     }
 }

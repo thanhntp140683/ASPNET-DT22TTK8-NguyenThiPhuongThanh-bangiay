@@ -45,14 +45,14 @@
                     <td>
                         <div class="gap-2">
 
-                        <form asp-action="UpdateStatus" asp-controller="Order" asp-area="Admin" method="post" class="justify-content-around d-flex align-items-center gap-2">
+                        <form asp-action="UpdateStatus" asp-controller="Order" asp-area="Admin" method="post" class="justify-content-around d-flex align-items-center gap-3">
                                 <input type="hidden" name="id" value="@order.Id" />
                                 <select name="status" class="form-select form-select-sm" style="width: auto;">
                                     <option value="Đang xử lý" selected="@(order.OrderStatus == "Đang xử lý")">Đang xử lý</option>
                                     <option value="Hoàn thành" selected="@(order.OrderStatus == "Hoàn thành")">Hoàn thành</option>
                                     <option value="Hủy" selected="@(order.OrderStatus == "Hủy")">Hủy</option>
                                 </select>
-                                <button type="submit" class="btn btn-dark btn-sm">
+                                <button type="submit" class="btn btn-dark btn-sm" style="margin-left: 10px">
                                     Cập nhật
                                 </button>
                             </form>
